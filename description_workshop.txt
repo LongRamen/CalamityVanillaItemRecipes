@@ -1,0 +1,64 @@
+[h1]CALAMITY'S VANILLA ITEM RECIPES[/h1]
+
+[b]Doing a vanilla playthrough but missing the convenient recipes Calamity adds for certain vanilla items?
+This mod adds those recipes back into the game to improve your experience.[/b]
+
+Up to date as of Calamity version 2.0.5.
+(Please let me know if there are any missing recipes or other issues, or if a new Calamity update has added/changed any of these recipes.)
+
+
+[h2]WHICH RECIPES ARE INCLUDED?[/h2]
+
+[b](1) What kind of recipe is it?[/b]
+ - New recipe for an item which has no vanilla recipe: [b]Go to (2)[/b]
+ - New recipe added alongside an existing vanilla recipe: [b]Go to (2)[/b]
+ - Change to an existing vanilla recipe: [b]NOT INCLUDED[/b]
+
+[b](2) Is there a Calamity-exclusive item in the recipe?[/b]
+ - No: [b]INCLUDED[/b]
+ - Yes, but it is one of the Exceptions listed below: [b]INCLUDED[/b]
+ - Yes, and it is NOT one of the Exceptions: [b]NOT INCLUDED[/b]
+
+
+[h2]EXCEPTIONS[/h2]
+
+The following 7 Calamity items, which can be obtained in Calamity from vanilla enemies, are added by this mod and are used in their respective vanilla item recipes.
+
+This feature is turned off by default and must be enabled in the mod's settings.
+
+[list]
+ [*] [b]Blood Orb[/b]
+   Dropped by: Blood Zombie, Drippler, The Bride, The Groom, Maggot Zombie, Clown, Wandering Eye Fish, Zombie Merman, Blood Eel, Hemogoblin Shark, Dreadnautilus
+   Can also be crafted from Bloody Tear
+   Used to craft: Vitamins, Money Trough, Bloody Tear, and all vanilla buff potions
+
+ [*] [b]Murky Paste[/b]
+   Dropped by: Arapaima, Spiked Jungle Slime
+   Also found in Jungle/Bramble Crates
+   Used to craft: Bezoar
+
+ [*] [b]Ancient Bone Dust[/b]
+   Dropped by: Skeleton, Armored Skeleton, Skeleton Archer, Spore Skeleton, Hoplite
+   Also found in Iron/Mythril Crates
+   Used to craft: Armor Polish
+
+ [*] [b]Demonic Bone Ash[/b]
+   Dropped by: Demon, Voodoo Demon, Red Devil, Bone Serpent
+   Used to craft: Demon Conch
+
+ [*] [b]Essence of Eleum[/b]
+   Dropped by: Ice Elemental, Ice Tortoise, Icy Merman, Wolf, Ice Golem, Mister Stabby, Snow Balla, Snowman Gangsta
+   Also found in Frozen/Boreal Crates in Hardmode
+   Used to craft: Frozen Turtle Shell
+
+ [*] [b]Essence of Sunlight[/b]
+   Dropped by: Harpy (in Hardmode), Wyvern, Angry Nimbus, Golem
+   Also found in Sky/Azure Crates in Hardmode
+   Used to craft: Core of Sunlight
+
+ [*] [b]Core of Sunlight[/b]
+   Crafted from Essence of Sunlight
+   Used to craft: Lihzahrd Power Cell
+[/list]
+
+(Let me know if there are any more crafting materials that should be added to this list. They should only be added if they are obtainable from vanilla enemies or other vanilla sources.)

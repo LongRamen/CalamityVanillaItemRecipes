@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Import tModLoader mod properties -->
+	<Import Project="..\tModLoader.targets" />
+
+	<!-- General -->
+	<PropertyGroup>
+	  <Platforms>AnyCPU;x64</Platforms>
+	</PropertyGroup>
+
+	<!-- References -->
+	<ItemGroup>
+		
+	</ItemGroup>
+
+</Project>

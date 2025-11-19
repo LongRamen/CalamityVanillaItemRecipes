@@ -1,0 +1,127 @@
+Items: {
+	AncientBoneDust: {
+		DisplayName: Ancient Bone Dust
+		Tooltip: ""
+	}
+
+	BloodOrb: {
+		DisplayName: Blood Orb
+		Tooltip: ""
+	}
+
+	CoreofSunlight: {
+		DisplayName: Core of Sunlight
+		Tooltip: ""
+	}
+
+	DemonicBoneAsh: {
+		DisplayName: Demonic Bone Ash
+		Tooltip: ""
+	}
+
+	EssenceofEleum: {
+		DisplayName: Essence of Eleum
+		Tooltip: The essence of cold creatures
+	}
+
+	EssenceofSunlight: {
+		DisplayName: Essence of Sunlight
+		Tooltip: The essence of sky, light, and storm creatures
+	}
+
+	MurkyPaste: {
+		DisplayName: Murky Paste
+		Tooltip: ""
+	}
+}
+
+Configs: {
+	MainConfig: {
+		DisplayName: Main Config
+		EnableItemsHeader: Add crafting materials from Calamity
+
+		AncientBoneDust_Enabled: {
+			Label: Ancient Bone Dust
+			Tooltip:
+				'''
+				See "Exceptions" in the mod description for more details on this feature.
+
+				Note: turning these options off disables all methods of obtaining the added
+				items and all the recipes that include them, but it does not completely
+				unload the items from the game, so any of these items that are already in
+				the inventory or a chest will stay there.
+
+				'''
+		}
+
+		BloodOrb_Enabled: {
+			Label: Blood Orb
+			Tooltip:
+				'''
+				See "Exceptions" in the mod description for more details on this feature.
+
+				Note: turning these options off disables all methods of obtaining the added
+				items and all the recipes that include them, but it does not completely
+				unload the items from the game, so any of these items that are already in
+				the inventory or a chest will stay there.
+
+				'''
+		}
+
+		DemonicBoneAsh_Enabled: {
+			Label: Demonic Bone Ash
+			Tooltip:
+				'''
+				See "Exceptions" in the mod description for more details on this feature.
+
+				Note: turning these options off disables all methods of obtaining the added
+				items and all the recipes that include them, but it does not completely
+				unload the items from the game, so any of these items that are already in
+				the inventory or a chest will stay there.
+
+				'''
+		}
+
+		EssenceofEleum_Enabled: {
+			Label: Essence of Eleum
+			Tooltip:
+				'''
+				See "Exceptions" in the mod description for more details on this feature.
+
+				Note: turning these options off disables all methods of obtaining the added
+				items and all the recipes that include them, but it does not completely
+				unload the items from the game, so any of these items that are already in
+				the inventory or a chest will stay there.
+
+				'''
+		}
+
+		Essence_CoreofSunlight_Enabled: {
+			Label: Essence/Core of Sunlight
+			Tooltip:
+				'''
+				See "Exceptions" in the mod description for more details on this feature.
+
+				Note: turning these options off disables all methods of obtaining the added
+				items and all the recipes that include them, but it does not completely
+				unload the items from the game, so any of these items that are already in
+				the inventory or a chest will stay there.
+
+				'''
+		}
+
+		MurkyPaste_Enabled: {
+			Label: Murky Paste
+			Tooltip:
+				'''
+				See "Exceptions" in the mod description for more details on this feature.
+
+				Note: turning these options off disables all methods of obtaining the added
+				items and all the recipes that include them, but it does not completely
+				unload the items from the game, so any of these items that are already in
+				the inventory or a chest will stay there.
+
+				'''
+		}
+	}
+}
