@@ -62,3 +62,5 @@ This feature is turned off by default and must be enabled in the mod's settings.
 [/list]
 
 (Let me know if there are any more crafting materials that should be added to this list. They should only be added if they are obtainable from vanilla enemies or other vanilla sources.)
+
+Github: https://github.com/LongRamen/CalamityVanillaItemRecipes
