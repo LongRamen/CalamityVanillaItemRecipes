@@ -3,7 +3,7 @@
 [b]Doing a vanilla playthrough but missing the convenient recipes Calamity adds for certain vanilla items?
 This mod adds those recipes back into the game to improve your experience.[/b]
 
-Up to date as of Calamity version 2.0.5.
+Up to date as of Calamity version 2.0.7.1.
 (Please let me know if there are any missing recipes or other issues, or if a new Calamity update has added/changed any of these recipes.)
 
 
@@ -39,7 +39,6 @@ This feature is turned off by default and must be enabled in the mod's settings.
 
  [*] [b]Ancient Bone Dust[/b]
    Dropped by: Skeleton, Armored Skeleton, Skeleton Archer, Spore Skeleton, Hoplite
-   Also found in Iron/Mythril Crates
    Used to craft: Armor Polish
 
  [*] [b]Demonic Bone Ash[/b]
@@ -48,12 +47,10 @@ This feature is turned off by default and must be enabled in the mod's settings.
 
  [*] [b]Essence of Eleum[/b]
    Dropped by: Ice Elemental, Ice Tortoise, Icy Merman, Wolf, Ice Golem, Mister Stabby, Snow Balla, Snowman Gangsta
-   Also found in Frozen/Boreal Crates in Hardmode
    Used to craft: Frozen Turtle Shell
 
  [*] [b]Essence of Sunlight[/b]
    Dropped by: Harpy (in Hardmode), Wyvern, Angry Nimbus, Golem
-   Also found in Sky/Azure Crates in Hardmode
    Used to craft: Core of Sunlight
 
  [*] [b]Core of Sunlight[/b]

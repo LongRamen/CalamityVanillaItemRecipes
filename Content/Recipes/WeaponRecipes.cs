@@ -77,6 +77,7 @@ namespace CalamityVanillaItemRecipes.Content.Recipes
 				.AddIngredient(ItemID.Torch, 3)
 				.AddIngredient(ItemID.FallenStar)
 				.AddTile(TileID.Anvils)
+                .AddCondition(Condition.NotRemixWorld)
                 .DisableDecraft()
                 .Register();
 			
