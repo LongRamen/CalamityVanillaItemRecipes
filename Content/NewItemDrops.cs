@@ -16,7 +16,7 @@ namespace CalamityVanillaItemRecipes.Content
                 // Ancient Bone Dust - Iron Crate, Mythril Crate
                 if (item.type == ItemID.IronCrate || item.type == ItemID.IronCrateHard)
                 {
-                    itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<Content.Items.AncientBoneDust>(), 4, 5, 8));
+                    itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<Items.AncientBoneDust>(), 4, 5, 8));
                 }
             }
 
@@ -25,7 +25,7 @@ namespace CalamityVanillaItemRecipes.Content
                 // Essence of Eleum - Frozen Crate, Boreal Crate
                 if (item.type == ItemID.FrozenCrate || item.type == ItemID.FrozenCrateHard)
                 {
-                    itemLoot.Add(ItemDropRule.ByCondition(new Conditions.IsHardmode(), ModContent.ItemType<Content.Items.EssenceofEleum>(), 5, 2, 4));
+                    itemLoot.Add(ItemDropRule.ByCondition(new Conditions.IsHardmode(), ModContent.ItemType<Items.EssenceofEleum>(), 5, 2, 4));
                 }
             }
             */
@@ -37,11 +37,11 @@ namespace CalamityVanillaItemRecipes.Content
                 /* - Removed in Calamity v2.0.7
                 if (item.type == ItemID.FloatingIslandFishingCrate || item.type == ItemID.FloatingIslandFishingCrateHard)
                 {
-                    itemLoot.Add(ItemDropRule.ByCondition(new Conditions.IsHardmode(), ModContent.ItemType<Content.Items.EssenceofSunlight>(), 5, 2, 4));
+                    itemLoot.Add(ItemDropRule.ByCondition(new Conditions.IsHardmode(), ModContent.ItemType<Items.EssenceofSunlight>(), 5, 2, 4));
                 }
                 else */if (item.type == ItemID.GolemBossBag)
                 {
-                    itemLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<Content.Items.EssenceofSunlight>(), 1, 10, 12));
+                    itemLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<Items.EssenceofSunlight>(), 1, 10, 12));
                 }
             }
 
@@ -50,7 +50,7 @@ namespace CalamityVanillaItemRecipes.Content
                 // Murky Paste - Jungle Crate, Bramble Crate
                 if (item.type == ItemID.JungleFishingCrate || item.type == ItemID.JungleFishingCrateHard)
                 {
-                    itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<Content.Items.MurkyPaste>(), 5, 1, 3));
+                    itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<Items.MurkyPaste>(), 5, 1, 3));
                 }
             }
         }

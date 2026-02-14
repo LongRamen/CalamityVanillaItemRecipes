@@ -8,24 +8,24 @@ namespace CalamityVanillaItemRecipes.Content.Items
     {
         public override void SetDefaults()
         {
-			Item.value = Item.sellPrice(0, 0, 6, 0);
-			Item.rare = ItemRarityID.Orange;
-			Item.maxStack = 9999;
-			Item.width = 40;
-			Item.height = 30;
+            Item.value = Item.sellPrice(0, 0, 6, 0);
+            Item.rare = ItemRarityID.Orange;
+            Item.maxStack = 9999;
+            Item.width = 40;
+            Item.height = 30;
         }
-		
-		public override void AddRecipes()
-		{
-			if (ModContent.GetInstance<Config.MainConfig>().DemonicBoneAsh_Enabled)
-			{
-				// Demon Conch
-				Recipe.Create(ItemID.DemonConch)
-					.AddIngredient<Content.Items.DemonicBoneAsh>()
-					.AddIngredient(ItemID.HellstoneBar, 4)
-					.AddTile(TileID.Hellforge)
-					.Register();
-			}
-		}
+        
+        public override void AddRecipes()
+        {
+            if (ModContent.GetInstance<Config.MainConfig>().DemonicBoneAsh_Enabled)
+            {
+                // Demon Conch
+                Recipe.Create(ItemID.DemonConch)
+                    .AddIngredient<DemonicBoneAsh>()
+                    .AddIngredient(ItemID.HellstoneBar, 4)
+                    .AddTile(TileID.Hellforge)
+                    .Register();
+            }
+        }
     }
 }

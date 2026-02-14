@@ -11,30 +11,30 @@ namespace CalamityVanillaItemRecipes.Content.Items
     {
         public override void SetStaticDefaults()
         {
-			ItemID.Sets.ItemNoGravity[Item.type] = true;
+            ItemID.Sets.ItemNoGravity[Item.type] = true;
         }
 
         public override void SetDefaults()
         {
-			Item.value = Item.sellPrice(0, 0, 40, 0);
-			Item.rare = ItemRarityID.LightRed;
-			Item.maxStack = 9999;
-			Item.width = 24;
-			Item.height = 20;
+            Item.value = Item.sellPrice(0, 0, 40, 0);
+            Item.rare = ItemRarityID.LightRed;
+            Item.maxStack = 9999;
+            Item.width = 24;
+            Item.height = 20;
         }
-		
-		public override void AddRecipes()
-		{
-			if (ModContent.GetInstance<Config.MainConfig>().EssenceofEleum_Enabled)
-			{
-				// Frozen Turtle Shell
-				Recipe.Create(ItemID.FrozenTurtleShell)
-					.AddIngredient(ItemID.TurtleShell, 2)
-					.AddIngredient<Content.Items.EssenceofEleum>(4)
-					.AddTile(TileID.IceMachine)
-					.DisableDecraft()
+        
+        public override void AddRecipes()
+        {
+            if (ModContent.GetInstance<Config.MainConfig>().EssenceofEleum_Enabled)
+            {
+                // Frozen Turtle Shell
+                Recipe.Create(ItemID.FrozenTurtleShell)
+                    .AddIngredient(ItemID.TurtleShell, 2)
+                    .AddIngredient<EssenceofEleum>(4)
+                    .AddTile(TileID.IceMachine)
+                    .DisableDecraft()
                     .Register();
-			}
+            }
         }
 
         public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)

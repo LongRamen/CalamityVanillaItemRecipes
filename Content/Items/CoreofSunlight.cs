@@ -16,32 +16,32 @@ namespace CalamityVanillaItemRecipes.Content.Items
 
         public override void SetDefaults()
         {
-			Item.value = Item.sellPrice(0, 0, 40, 0);
-			Item.rare = ItemRarityID.Yellow;
-			Item.maxStack = 9999;
-			Item.width = 26;
-			Item.height = 26;
+            Item.value = Item.sellPrice(0, 0, 40, 0);
+            Item.rare = ItemRarityID.Yellow;
+            Item.maxStack = 9999;
+            Item.width = 26;
+            Item.height = 26;
         }
-		
-		public override void AddRecipes()
-		{
-			if (ModContent.GetInstance<Config.MainConfig>().Essence_CoreofSunlight_Enabled)
-			{
-				CreateRecipe(3)
-					.AddIngredient<Content.Items.EssenceofSunlight>()
-					.AddIngredient(ItemID.Ectoplasm)
-					.AddTile(TileID.MythrilAnvil)
-					.Register();
-				
-				// Lihzahrd Power Cell
-				Recipe.Create(ItemID.LihzahrdPowerCell)
-					.AddIngredient(ItemID.LihzahrdBrick, 5)
-					.AddIngredient<Content.Items.CoreofSunlight>()
-					.AddTile(TileID.LihzahrdFurnace)
-					.DisableDecraft()
+        
+        public override void AddRecipes()
+        {
+            if (ModContent.GetInstance<Config.MainConfig>().Essence_CoreofSunlight_Enabled)
+            {
+                CreateRecipe(3)
+                    .AddIngredient<EssenceofSunlight>()
+                    .AddIngredient(ItemID.Ectoplasm)
+                    .AddTile(TileID.MythrilAnvil)
                     .Register();
-			}
-		}
+                
+                // Lihzahrd Power Cell
+                Recipe.Create(ItemID.LihzahrdPowerCell)
+                    .AddIngredient(ItemID.LihzahrdBrick, 5)
+                    .AddIngredient<CoreofSunlight>()
+                    .AddTile(TileID.LihzahrdFurnace)
+                    .DisableDecraft()
+                    .Register();
+            }
+        }
 
         public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)
         {

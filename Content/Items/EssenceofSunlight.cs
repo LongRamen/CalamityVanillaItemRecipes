@@ -16,11 +16,11 @@ namespace CalamityVanillaItemRecipes.Content.Items
 
         public override void SetDefaults()
         {
-			Item.value = Item.sellPrice(0, 0, 40, 0);
-			Item.rare = ItemRarityID.LightRed;
-			Item.maxStack = 9999;
-			Item.width = 28;
-			Item.height = 22;
+            Item.value = Item.sellPrice(0, 0, 40, 0);
+            Item.rare = ItemRarityID.LightRed;
+            Item.maxStack = 9999;
+            Item.width = 28;
+            Item.height = 22;
         }
 
         public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)

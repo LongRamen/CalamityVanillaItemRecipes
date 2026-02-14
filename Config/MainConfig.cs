@@ -12,10 +12,10 @@ namespace CalamityVanillaItemRecipes.Config
         public override ConfigScope Mode => ConfigScope.ServerSide;
 
         /*
-		[DefaultValue(false)]
-		[ReloadRequired]
-		public bool NewItemsEnabled;
-		*/
+        [DefaultValue(false)]
+        [ReloadRequired]
+        public bool NewItemsEnabled;
+        */
 
         [Header("$Mods.CalamityVanillaItemRecipes.Configs.MainConfig.EnableItemsHeader")]
 
