@@ -1,14 +1,18 @@
+using CalamityVanillaItemRecipes.Config;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityVanillaItemRecipes.Content.Recipes
+namespace CalamityVanillaItemRecipes.Content.Recipes;
+
+public class CraftingStationRecipes : ModSystem
 {
-    public class CraftingStationRecipes : ModSystem
+    public override void AddRecipes()
     {
-        public override void AddRecipes()
-        {
-            // Ice Machine
+        #region Removed
+
+        // Ice Machine
+        if (RemovedRecipesConfig.Instance.IceMachine)
             Recipe.Create(ItemID.IceMachine)
                 .AddRecipeGroup(nameof(ItemID.IceBlock), 10)
                 .AddIngredient(ItemID.SnowBlock, 5)
@@ -16,8 +20,18 @@ namespace CalamityVanillaItemRecipes.Content.Recipes
                 .AddTile(TileID.Anvils)
                 .DisableDecraft()
                 .Register();
-            
-            // Sky Mill
+
+        // Living Loom
+        if (RemovedRecipesConfig.Instance.LivingLoom)
+            Recipe.Create(ItemID.LivingLoom)
+                .AddIngredient(ItemID.Loom)
+                .AddIngredient(ItemID.Vine, 2)
+                .AddTile(TileID.Sawmill)
+                .DisableDecraft()
+                .Register();
+
+        // Sky Mill
+        if (RemovedRecipesConfig.Instance.SkyMill)
             Recipe.Create(ItemID.SkyMill)
                 .AddIngredient(ItemID.SunplateBlock, 10)
                 .AddIngredient(ItemID.Cloud, 5)
@@ -25,14 +39,7 @@ namespace CalamityVanillaItemRecipes.Content.Recipes
                 .AddTile(TileID.Anvils)
                 .DisableDecraft()
                 .Register();
-            
-            // Living Loom
-            Recipe.Create(ItemID.LivingLoom)
-                .AddIngredient(ItemID.Loom)
-                .AddIngredient(ItemID.Vine, 2)
-                .AddTile(TileID.Sawmill)
-                .DisableDecraft()
-                .Register();
-        }
+
+        #endregion
     }
 }

@@ -1,24 +1,75 @@
+using CalamityVanillaItemRecipes.Config;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityVanillaItemRecipes.Content.Recipes
+namespace CalamityVanillaItemRecipes.Content.Recipes;
+
+public class ToolRecipes : ModSystem
 {
-    public class ToolRecipes : ModSystem
+    public override void AddRecipes()
     {
-        public override void AddRecipes()
-        {
-            // Demon Conch - DemonicBoneAsh.cs
-            
-            // Bug Net
+        #region Current
+
+        // Encumbering Stone
+        if (CurrentRecipesConfig.Instance.EncumberingStone)
+            Recipe.Create(ItemID.EncumberingStone)
+                .AddIngredient(ItemID.StoneBlock, 100)
+                .AddTile(TileID.Anvils)
+                //.DisableDecraft()
+                .Register();
+
+        // Magic Conch
+        if (CurrentRecipesConfig.Instance.MagicConch)
+            Recipe.Create(ItemID.MagicConch)
+                .AddIngredient(ItemID.ShellPileBlock, 20)
+                .AddIngredient(ItemID.WhitePearl)
+                .AddTile(TileID.Anvils)
+                .Register();
+
+        // Umbrella
+        if (CurrentRecipesConfig.Instance.Umbrella)
+            Recipe.Create(ItemID.Umbrella)
+                .AddIngredient(ItemID.Silk, 5)
+                .AddRecipeGroup(nameof(ItemID.CopperBar), 2)
+                .AddTile(TileID.Loom)
+                //.DisableDecraft()
+                .Register();
+
+        // Tendon Hook
+        if (CurrentRecipesConfig.Instance.TendonHook)
+            Recipe.Create(ItemID.TendonHook)
+                .AddIngredient(ItemID.WormHook)
+                .AddTile(TileID.TinkerersWorkbench)
+                .AddCondition(Condition.InGraveyard)
+                .DisableDecraft()
+                .Register();
+
+        // Worm Hook
+        if (CurrentRecipesConfig.Instance.WormHook)
+            Recipe.Create(ItemID.WormHook)
+                .AddIngredient(ItemID.TendonHook)
+                .AddTile(TileID.TinkerersWorkbench)
+                .AddCondition(Condition.InGraveyard)
+                .DisableDecraft()
+                .Register();
+
+        #endregion
+
+
+        #region Removed
+
+        // Bug Net
+        if (RemovedRecipesConfig.Instance.BugNet)
             Recipe.Create(ItemID.BugNet)
                 .AddIngredient(ItemID.Cobweb, 30)
                 .AddRecipeGroup(nameof(ItemID.CopperBar), 3)
                 .AddTile(TileID.Anvils)
                 .DisableDecraft()
                 .Register();
-            
-            // Desert Minecart
+
+        // Desert Minecart
+        if (RemovedRecipesConfig.Instance.DesertMinecart)
             Recipe.Create(ItemID.DesertMinecart)
                 .AddIngredient(ItemID.SandstoneBrick, 20)
                 .AddRecipeGroup(nameof(ItemID.GoldBar), 6)
@@ -26,24 +77,41 @@ namespace CalamityVanillaItemRecipes.Content.Recipes
                 .AddTile(TileID.Anvils)
                 .DisableDecraft()
                 .Register();
-            
-            // Encumbering Stone
-            Recipe.Create(ItemID.EncumberingStone)
-                .AddIngredient(ItemID.StoneBlock, 100)
-                .AddTile(TileID.Anvils)
+
+        // Leaf Wand
+        if (RemovedRecipesConfig.Instance.LeafWand)
+            Recipe.Create(ItemID.LeafWand)
+                .AddIngredient(ItemID.Wood, 10)
+                .AddTile(TileID.LivingLoom)
                 .DisableDecraft()
                 .Register();
-            
-            // Magic Conch
-            Recipe.Create(ItemID.MagicConch)
-                .AddIngredient(ItemID.ShellPileBlock, 20)
-                .AddIngredient(ItemID.WhitePearl)
-                .AddTile(TileID.Anvils)
+
+        // Living Mahogany Wand
+        if (RemovedRecipesConfig.Instance.LivingMahoganyWand)
+            Recipe.Create(ItemID.LivingMahoganyWand)
+                .AddIngredient(ItemID.RichMahogany, 10)
+                .AddTile(TileID.LivingLoom)
+                .DisableDecraft()
                 .Register();
-            
-            // Money Trough - BloodOrb.cs
-            
-            // Shadow Key
+
+        // Living Wood Wand
+        if (RemovedRecipesConfig.Instance.LivingWoodWand)
+            Recipe.Create(ItemID.LivingWoodWand)
+                .AddIngredient(ItemID.Wood, 10)
+                .AddTile(TileID.LivingLoom)
+                .DisableDecraft()
+                .Register();
+
+        // Rich Mahogany Leaf Wand
+        if (RemovedRecipesConfig.Instance.RichMahoganyLeafWand)
+            Recipe.Create(ItemID.LivingMahoganyLeafWand)
+                .AddIngredient(ItemID.RichMahogany, 10)
+                .AddTile(TileID.LivingLoom)
+                .DisableDecraft()
+                .Register();
+
+        // Shadow Key
+        if (RemovedRecipesConfig.Instance.ShadowKey)
             Recipe.Create(ItemID.ShadowKey)
                 .AddIngredient(ItemID.GoldenKey)
                 .AddIngredient(ItemID.Obsidian, 10)
@@ -51,62 +119,9 @@ namespace CalamityVanillaItemRecipes.Content.Recipes
                 .AddTile(TileID.Anvils)
                 .DisableDecraft()
                 .Register();
-            
-            // Leaf Wand
-            Recipe.Create(ItemID.LeafWand)
-                .AddIngredient(ItemID.Wood, 10)
-                .AddTile(TileID.LivingLoom)
-                .DisableDecraft()
-                .Register();
-            
-            // Living Mahogany Wand
-            Recipe.Create(ItemID.LivingMahoganyWand)
-                .AddIngredient(ItemID.RichMahogany, 10)
-                .AddTile(TileID.LivingLoom)
-                .DisableDecraft()
-                .Register();
-            
-            // Living Wood Wand
-            Recipe.Create(ItemID.LivingWoodWand)
-                .AddIngredient(ItemID.Wood, 10)
-                .AddTile(TileID.LivingLoom)
-                .DisableDecraft()
-                .Register();
-            
-            // Rich Mahogany Leaf Wand
-            Recipe.Create(ItemID.LivingMahoganyLeafWand)
-                .AddIngredient(ItemID.RichMahogany, 10)
-                .AddTile(TileID.LivingLoom)
-                .DisableDecraft()
-                .Register();
-            
-            // Umbrella
-            Recipe.Create(ItemID.Umbrella)
-                .AddIngredient(ItemID.Silk, 5)
-                .AddRecipeGroup(nameof(ItemID.CopperBar), 2)
-                .AddTile(TileID.Loom)
-                .DisableDecraft()
-                .Register();
-            
-            // Amber Hook # ?
-            
-            // Tendon Hook
-            Recipe.Create(ItemID.TendonHook)
-                .AddIngredient(ItemID.WormHook)
-                .AddTile(TileID.TinkerersWorkbench)
-                .AddCondition(Condition.InGraveyard)
-                .DisableDecraft()
-                .Register();
-            
-            // Worm Hook
-            Recipe.Create(ItemID.WormHook)
-                .AddIngredient(ItemID.TendonHook)
-                .AddTile(TileID.TinkerersWorkbench)
-                .AddCondition(Condition.InGraveyard)
-                .DisableDecraft()
-                .Register();
-            
-            // Staff of Regrowth
+
+        // Staff of Regrowth
+        if (RemovedRecipesConfig.Instance.StaffOfRegrowth)
             Recipe.Create(ItemID.StaffofRegrowth)
                 .AddIngredient(ItemID.RichMahogany, 10)
                 .AddIngredient(ItemID.JungleSpores, 5)
@@ -114,6 +129,7 @@ namespace CalamityVanillaItemRecipes.Content.Recipes
                 .AddTile(TileID.WorkBenches)
                 .DisableDecraft()
                 .Register();
-        }
+
+        #endregion
     }
 }

@@ -3,64 +3,436 @@ using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.Serialization;
+using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
 
-namespace CalamityVanillaItemRecipes.Config
+namespace CalamityVanillaItemRecipes.Config;
+
+public class MainConfig : ModConfig // 3. Calamity Items
 {
-    public class MainConfig : ModConfig
+    public override ConfigScope Mode => ConfigScope.ServerSide;
+
+    public static MainConfig Instance => ModContent.GetInstance<MainConfig>();
+
+
+    #region Ancient Bone Dust
+
+    [Header("AncientBoneDust")]
+
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool AncientBoneDust_Enabled { get; set; }
+
+    // Fledgling Wings (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool FledglingWings { get; set; }
+
+    // Armor Polish (removed)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool ArmorPolish { get; set; }
+
+    #endregion
+
+
+    #region Blood Orb
+
+    [Header("BloodOrb")]
+
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool BloodOrb_Enabled { get; set; }
+
+    // Bloody Tear (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool BloodyTear { get; set; }
+
+    // Money Trough (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool MoneyTrough { get; set; }
+
+    // Bloody Tear -> 10 Blood Orbs (removed)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool BloodOrb_Recipe { get; set; }
+
+    // Vitamins (removed)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool Vitamins { get; set; }
+
+    #endregion
+
+
+    #region Blood Orb - Potions
+
+    [Header("BloodOrbPotions")]
+
+    [DefaultValue(false)]
+    [JsonIgnore]
+    [ShowDespiteJsonIgnore]
+    public bool EnableAllPotions// { get; set; }
     {
-        public override ConfigScope Mode => ConfigScope.ServerSide;
+        get => false;
+        set { if (value) ToggleAllPotions(true); }
+    }
 
-        /*
-        [DefaultValue(false)]
-        [ReloadRequired]
-        public bool NewItemsEnabled;
-        */
+    [DefaultValue(false)]
+    [JsonIgnore]
+    [ShowDespiteJsonIgnore]
+    public bool DisableAllPotions// { get; set; }
+    {
+        get => false;
+        set { if (value) ToggleAllPotions(false); }
+    }
 
-        [Header("$Mods.CalamityVanillaItemRecipes.Configs.MainConfig.EnableItemsHeader")]
+    private void ToggleAllPotions(bool value)
+    {
+        #region Toggles
 
-        [DefaultValue(false)]
-        [ReloadRequired]
-        public bool AncientBoneDust_Enabled;
+        AmmoReservationPotion = value;
+        ArcheryPotion = value;
+        BattlePotion = value;
+        BiomeSightPotion = value;
+        BuilderPotion = value;
+        CalmingPotion = value;
+        CratePotion = value;
+        DangersensePotion = value;
+        EndurancePotion = value;
+        FeatherfallPotion = value;
+        FishingPotion = value;
+        FlipperPotion = value;
+        GenderChangePotion = value;
+        GillsPotion = value;
+        GravitationPotion = value;
+        GreaterLuckPotion = value;
+        HeartreachPotion = value;
+        HunterPotion = value;
+        InfernoPotion = value;
+        InvisibilityPotion = value;
+        IronskinPotion = value;
+        LesserLuckPotion = value;
+        LifeforcePotion = value;
+        LovePotion = value;
+        LuckPotion = value;
+        MagicPowerPotion = value;
+        ManaRegenerationPotion = value;
+        MiningPotion = value;
+        NightOwlPotion = value;
+        ObsidianSkinPotion = value;
+        PotionOfReturn = value;
+        RagePotion = value;
+        RecallPotion = value;
+        RegenerationPotion = value;
+        ShinePotion = value;
+        SonarPotion = value;
+        SpelunkerPotion = value;
+        StinkPotion = value;
+        SummoningPotion = value;
+        SwiftnessPotion = value;
+        TeleportationPotion = value;
+        ThornsPotion = value;
+        TitanPotion = value;
+        WarmthPotion = value;
+        WaterWalkingPotion = value;
+        WormholePotion = value;
+        WrathPotion = value;
 
-        [DefaultValue(false)]
-        [ReloadRequired]
-        public bool BloodOrb_Enabled;
+        #endregion
+    }
 
-        [DefaultValue(false)]
-        [ReloadRequired]
-        public bool DemonicBoneAsh_Enabled;
+    // Ammo Reservation Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool AmmoReservationPotion { get; set; }
 
-        [DefaultValue(false)]
-        [ReloadRequired]
-        public bool EssenceofEleum_Enabled;
+    // Archery Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool ArcheryPotion { get; set; }
 
-        [DefaultValue(false)]
-        [ReloadRequired]
-        public bool Essence_CoreofSunlight_Enabled;
+    // Battle Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool BattlePotion { get; set; }
 
-        [DefaultValue(false)]
-        [ReloadRequired]
-        public bool MurkyPaste_Enabled;
+    // Biome Sight Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool BiomeSightPotion { get; set; }
 
-        [JsonExtensionData]
-        private IDictionary<string, JToken> _additionalData = new Dictionary<string, JToken>();
+    // Builder Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool BuilderPotion { get; set; }
 
-        [OnDeserialized]
-        internal void OnDeserializedMethod(StreamingContext context)
+    // Calming Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool CalmingPotion { get; set; }
+
+    // Crate Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool CratePotion { get; set; }
+
+    // Dangersense Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool DangersensePotion { get; set; }
+
+    // Endurance Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool EndurancePotion { get; set; }
+
+    // Featherfall Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool FeatherfallPotion { get; set; }
+
+    // Fishing Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool FishingPotion { get; set; }
+
+    // Flipper Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool FlipperPotion { get; set; }
+
+    // Gender Change Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool GenderChangePotion { get; set; }
+
+    // Gills Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool GillsPotion { get; set; }
+
+    // Gravitation Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool GravitationPotion { get; set; }
+
+    // Greater Luck Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool GreaterLuckPotion { get; set; }
+
+    // Heartreach Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool HeartreachPotion { get; set; }
+
+    // Hunter Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool HunterPotion { get; set; }
+
+    // Inferno Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool InfernoPotion { get; set; }
+
+    // Invisibility Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool InvisibilityPotion { get; set; }
+
+    // Ironskin Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool IronskinPotion { get; set; }
+
+    // Lesser Luck Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool LesserLuckPotion { get; set; }
+
+    // Lifeforce Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool LifeforcePotion { get; set; }
+
+    // Love Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool LovePotion { get; set; }
+
+    // Luck Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool LuckPotion { get; set; }
+
+    // Magic Power Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool MagicPowerPotion { get; set; }
+
+    // Mana Regeneration Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool ManaRegenerationPotion { get; set; }
+
+    // Mining Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool MiningPotion { get; set; }
+
+    // Night Owl Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool NightOwlPotion { get; set; }
+
+    // Obsidian Skin Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool ObsidianSkinPotion { get; set; }
+
+    // Potion of Return (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool PotionOfReturn { get; set; }
+
+    // Rage Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool RagePotion { get; set; }
+
+    // Recall Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool RecallPotion { get; set; }
+
+    // Regeneration Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool RegenerationPotion { get; set; }
+
+    // Shine Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool ShinePotion { get; set; }
+
+    // Sonar Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool SonarPotion { get; set; }
+
+    // Spelunker Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool SpelunkerPotion { get; set; }
+
+    // Stink Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool StinkPotion { get; set; }
+
+    // Summoning Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool SummoningPotion { get; set; }
+
+    // Swiftness Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool SwiftnessPotion { get; set; }
+
+    // Teleportation Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool TeleportationPotion { get; set; }
+
+    // Thorns Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool ThornsPotion { get; set; }
+
+    // Titan Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool TitanPotion { get; set; }
+
+    // Warmth Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool WarmthPotion { get; set; }
+
+    // Water Walking Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool WaterWalkingPotion { get; set; }
+
+    // Wormhole Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool WormholePotion { get; set; }
+
+    // Wrath Potion (current)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool WrathPotion { get; set; }
+
+    #endregion
+
+
+    #region Essence of Eleum
+
+    [Header("EssenceOfEleum")]
+
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool EssenceofEleum_Enabled { get; set; }
+
+    // Frozen Turtle Shell (removed)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool FrozenTurtleShell { get; set; }
+
+    #endregion
+
+
+    #region OnDeserialized
+
+    [JsonExtensionData]
+    private readonly IDictionary<string, JToken> _additionalData = new Dictionary<string, JToken>();
+
+    [OnDeserialized]
+    internal void OnDeserializedMethod(StreamingContext context)
+    {
+        try
         {
             if (_additionalData.TryGetValue("NewItemsEnabled", out JToken token))
             {
                 bool NewItemsEnabled = token.ToObject<bool>();
 
+                // Ancient Bone Dust
                 AncientBoneDust_Enabled = NewItemsEnabled;
+                FledglingWings = NewItemsEnabled;
+                ArmorPolish = NewItemsEnabled;
+
+                // Blood Orb
                 BloodOrb_Enabled = NewItemsEnabled;
-                DemonicBoneAsh_Enabled = NewItemsEnabled;
+                BloodyTear = NewItemsEnabled;
+                MoneyTrough = NewItemsEnabled;
+                BloodOrb_Recipe = NewItemsEnabled;
+                Vitamins = NewItemsEnabled;
+                ToggleAllPotions(NewItemsEnabled);
+
+                // Essence of Eleum
                 EssenceofEleum_Enabled = NewItemsEnabled;
-                Essence_CoreofSunlight_Enabled = NewItemsEnabled;
-                MurkyPaste_Enabled = NewItemsEnabled;
+                FrozenTurtleShell = NewItemsEnabled;
             }
-            _additionalData.Clear();
         }
+        catch { }
+        _additionalData.Clear();
     }
+
+    #endregion
 }

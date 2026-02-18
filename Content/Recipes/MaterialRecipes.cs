@@ -1,27 +1,24 @@
+using CalamityVanillaItemRecipes.Config;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityVanillaItemRecipes.Content.Recipes
+namespace CalamityVanillaItemRecipes.Content.Recipes;
+
+public class MaterialRecipes : ModSystem
 {
-    public class MaterialRecipes : ModSystem
+    public override void AddRecipes()
     {
-        public override void AddRecipes()
-        {
-            // Black Lens
+        #region Removed
+
+        // Black Lens
+        if (RemovedRecipesConfig.Instance.BlackLens)
             Recipe.Create(ItemID.BlackLens)
                 .AddIngredient(ItemID.Lens)
                 .AddIngredient(ItemID.BlackDye)
                 .AddTile(TileID.DyeVat)
                 .Register();
-            
-            // Fallen Star #
-            
-            // Luminite #
-            
-            // Wood #
-            
-            // Leather # ?
-        }
+
+        #endregion
     }
 }
