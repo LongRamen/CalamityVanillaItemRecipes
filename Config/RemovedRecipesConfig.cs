@@ -91,7 +91,7 @@ public class RemovedRecipesConfig : ModConfig // 2. Removed Recipes
 
     #region ACCESSORIES
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Accessories")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Accessories")]
 
     // Adhesive Bandage
     [DefaultValue(defaultValue)]
@@ -178,7 +178,7 @@ public class RemovedRecipesConfig : ModConfig // 2. Removed Recipes
 
     #region ARMOR
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Armor")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Armor")]
 
     // Pharaoh's Mask - removed in 2.0.7 but include anyway
     [DefaultValue(defaultValue)]
@@ -195,7 +195,7 @@ public class RemovedRecipesConfig : ModConfig // 2. Removed Recipes
 
     #region CONSUMABLES
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Consumables")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Consumables")]
 
     // Gelatin Crystal
     [DefaultValue(defaultValue)]
@@ -212,7 +212,7 @@ public class RemovedRecipesConfig : ModConfig // 2. Removed Recipes
 
     #region CRAFTING STATIONS
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.CraftingStations")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.CraftingStations")]
 
     // Ice Machine
     [DefaultValue(defaultValue)]
@@ -234,7 +234,7 @@ public class RemovedRecipesConfig : ModConfig // 2. Removed Recipes
 
     #region MATERIALS
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Materials")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Materials")]
 
     // Black Lens
     [DefaultValue(defaultValue)]
@@ -246,7 +246,7 @@ public class RemovedRecipesConfig : ModConfig // 2. Removed Recipes
 
     #region POTIONS
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Potions")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Potions")]
 
     // Apple Pie
     [DefaultValue(defaultValue)]
@@ -283,7 +283,7 @@ public class RemovedRecipesConfig : ModConfig // 2. Removed Recipes
 
     #region TOOLS
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Tools")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Tools")]
 
     // Bug Net
     [DefaultValue(defaultValue)]
@@ -330,7 +330,7 @@ public class RemovedRecipesConfig : ModConfig // 2. Removed Recipes
 
     #region WEAPONS
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Weapons")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Weapons")]
 
     // Flare Gun
     [DefaultValue(defaultValue)]

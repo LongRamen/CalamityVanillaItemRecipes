@@ -1,0 +1,431 @@
+DisplayName: 2. [c/{$Substitutions.Colours.Removed}:Removed] Recipes
+
+EnableAll: {
+	Label: "[c/{$Substitutions.Colours.Enable}:Enable All]"
+	Tooltip: ""
+}
+
+DisableAll: {
+	Label: "[c/{$Substitutions.Colours.Disable}:Disable All]"
+	Tooltip: ""
+}
+
+AdhesiveBandage: {
+	Label: "[i:AdhesiveBandage] Adhesive Bandage"
+	Tooltip:
+		'''
+		[i/s10:Silk] [i/s10:Gel] [i:HealingPotion] @ [i:IronAnvil] >> [i:AdhesiveBandage]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+BandOfRegeneration: {
+	Label: "[i:BandofRegeneration] Band of Regeneration"
+	Tooltip:
+		'''
+		[i:Shackle] [i:LifeCrystal] @ [i:IronAnvil] >> [i:BandofRegeneration]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+Blindfold: {
+	Label: "[i:Blindfold] Blindfold"
+	Tooltip:
+		'''
+		[i/s10:Silk] [i:TatteredCloth] @ [i:IronAnvil] >> [i:Blindfold]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+CelestialMagnet: {
+	Label: "[i:CelestialMagnet] Celestial Magnet"
+	Tooltip:
+		'''
+		[i:TreasureMagnet] [i/s5:FallenStar] @ [i:IronAnvil] >> [i:CelestialMagnet]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+DPSMeter: {
+	Label: "[i:DPSMeter] DPS Meter"
+	Tooltip:
+		'''
+		[i/s10:Wire] [i/s5:CalamityVanillaItemRecipes/AnyGoldBar] @ [i:IronAnvil] >> [i:DPSMeter]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+FastClock: {
+	Label: "[i:FastClock] Fast Clock"
+	Tooltip:
+		'''
+		[i:Timer1Second] [i/s5:PixieDust] [i/s5:SoulofLight] @ [i:IronAnvil] >> [i:FastClock]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+FeralClaws: {
+	Label: "[i:FeralClaws] Feral Claws"
+	Tooltip:
+		'''
+		[i/s10:Leather] @ [i:IronAnvil] >> [i:FeralClaws]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+GuideVoodooDoll: {
+	Label: "[i:GuideVoodooDoll] Guide Voodoo Doll"
+	Tooltip:
+		'''
+		[i/s2:Leather] [i/s10:CalamityVanillaItemRecipes/AnyVilePowder] @ [i:Hellforge] >> [i:GuideVoodooDoll]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+LavaproofFishingHook: {
+	Label: "[i:LavaFishingHook] Lavaproof Fishing Hook"
+	Tooltip:
+		'''
+		[i:Seashell] [i/s10:HellstoneBar] @ [i:Hellforge] >> [i:LavaFishingHook]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+MagicQuiver: {
+	Label: "[i:MagicQuiver] Magic Quiver"
+	Tooltip:
+		'''
+		[i:EndlessQuiver] [i/s5:PixieDust] [i/s3:Lens] [i/s5:SoulofLight] @ [i:CrystalBall] >> [i:MagicQuiver]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+Megaphone: {
+	Label: "[i:Megaphone] Megaphone"
+	Tooltip:
+		'''
+		[i/s5:Wire] [i/s3:CalamityVanillaItemRecipes/AnyCobaltBar] [i:Ruby] @ [i:IronAnvil] >> [i:Megaphone]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+MetalDetector: {
+	Label: "[i:MetalDetector] Metal Detector"
+	Tooltip:
+		'''
+		[i/s10:Wire] [i/s5:SpelunkerGlowstick] [i/s5:CalamityVanillaItemRecipes/AnyCopperBar] @ [i:IronAnvil] >> [i:MetalDetector]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+Nazar: {
+	Label: "[i:Nazar] Nazar"
+	Tooltip:
+		'''
+		[i/s5:SoulofNight] [i/s3:Lens] @ [i:IronAnvil] >> [i:Nazar]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+PocketMirror: {
+	Label: "[i:PocketMirror] Pocket Mirror"
+	Tooltip:
+		'''
+		[i/s5:Glass] [i/s3:CalamityVanillaItemRecipes/AnyGoldBar] [i/s2:CrystalShard] [i/s2:SoulofNight] @ [i:IronAnvil] >> [i:PocketMirror]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+ShoeSpikes: {
+	Label: "[i:ShoeSpikes] Shoe Spikes"
+	Tooltip:
+		'''
+		[i/s5:CalamityVanillaItemRecipes/AnyIronBar] [i/s5:Spike] @ [i:IronAnvil] >> [i:ShoeSpikes]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+TrifoldMap: {
+	Label: "[i:TrifoldMap] Trifold Map"
+	Tooltip:
+		'''
+		[i/s10:Silk] [i/s3:SoulofLight] [i/s3:SoulofNight] @ [i:IronAnvil] >> [i:TrifoldMap]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+PharaohsMask: {
+	Label: "[i:PharaohsMask] Pharaoh's Mask"
+	Tooltip:
+		'''
+		[i/s3:AncientCloth] @ [i:Loom] >> [i:PharaohsMask]
+
+		{$Substitutions.Removed_2_0_7}
+		'''
+}
+
+PharaohsRobe: {
+	Label: "[i:PharaohsRobe] Pharaoh's Robe"
+	Tooltip:
+		'''
+		[i/4:AncientCloth] @ [i:Loom] >> [i:PharaohsRobe]
+
+		{$Substitutions.Removed_2_0_7}
+		'''
+}
+
+GelatinCrystal: {
+	Label: "[i:QueenSlimeCrystal] Gelatin Crystal"
+	Tooltip:
+		'''
+		[i/s10:CrystalShard] [i/s5:PinkGel] [i/s5:SoulofLight] @ [i:Solidifier] >> [i:QueenSlimeCrystal]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+TempleKey: {
+	Label: "[i:TempleKey] Temple Key"
+	Tooltip:
+		'''
+		[i/s15:JungleSpores] [i/s10:RichMahogany] [i/s5:SoulofLight] [i/s5:SoulofNight] @ [i:MythrilAnvil] >> [i:TempleKey]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+IceMachine: {
+	Label: "[i:IceMachine] Ice Machine"
+	Tooltip:
+		'''
+		[i/s10:CalamityVanillaItemRecipes/AnyIceBlock] [i/s5:SnowBlock] [i/s5:CalamityVanillaItemRecipes/AnyIronBar] @ [i:IronAnvil] >> [i:IceMachine]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+LivingLoom: {
+	Label: "[i:LivingLoom] Living Loom"
+	Tooltip:
+		'''
+		[i:Loom] [i/s2:Vine] @ [i:Sawmill] >> [i:LivingLoom]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+SkyMill: {
+	Label: "[i:SkyMill] Sky Mill"
+	Tooltip:
+		'''
+		[i/s10:SunplateBlock] [i/s5:Cloud] [i/s3:RainCloud] @ [i:IronAnvil] >> [i:SkyMill]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+BlackLens: {
+	Label: "[i:BlackLens] Black Lens"
+	Tooltip:
+		'''
+		[i:Lens] [i:BlackDye] @ [i:DyeVat] >> [i:BlackLens]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+ApplePie: {
+	Label: "[i:ApplePie] Apple Pie"
+	Tooltip:
+		'''
+		[i/s3:Apple] @ [i:Hellforge] >> [i:ApplePie]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+BananaSplit: {
+	Label: "[i:BananaSplit] Banana Split"
+	Tooltip:
+		'''
+		[i:Banana] [i:IceBlock] [i:MilkCarton] @ [i:CookingPot] >> [i:BananaSplit]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+BBQRibs: {
+	Label: "[i:BBQRibs] BBQ Ribs"
+	Tooltip:
+		'''
+		[i/s6:FleshBlock] [i/s6:Bone] @ [i:Hellforge] >> [i:BBQRibs]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+CartonOfMilk: {
+	Label: "[i:MilkCarton] Carton of Milk"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s2:Bone] @ [i:CookingPot] >> [i:MilkCarton]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+Milkshake: {
+	Label: "[i:Milkshake] Milkshake"
+	Tooltip:
+		'''
+		[i:IceBlock] [i:MilkCarton] @ [i:IceMachine] >> [i:Milkshake]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+Nachos: {
+	Label: "[i:Nachos] Nachos"
+	Tooltip:
+		'''
+		[i:PotatoChips] [i:MilkCarton] @ [i:CookingPot] >> [i:Nachos]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+BugNet: {
+	Label: "[i:BugNet] Bug Net"
+	Tooltip:
+		'''
+		[i/s30:Cobweb] [i/s3:CalamityVanillaItemRecipes/AnyCopperBar] @ [i:IronAnvil] >> [i:BugNet]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+DesertMinecart: {
+	Label: "[i:DesertMinecart] Desert Minecart"
+	Tooltip:
+		'''
+		[i/s20:SandstoneBrick] [i/s6:CalamityVanillaItemRecipes/AnyGoldBar] [i/s3:CalamityVanillaItemRecipes/AnyIronBar] @ [i:IronAnvil] >> [i:DesertMinecart]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+LeafWand: {
+	Label: "[i:LeafWand] Leaf Wand"
+	Tooltip:
+		'''
+		[i/s10:Wood] @ [i:LivingLoom] >> [i:LeafWand]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+LivingMahoganyWand: {
+	Label: "[i:LivingMahoganyWand] Living Mahogany Wand"
+	Tooltip:
+		'''
+		[i/s10:RichMahogany] @ [i:LivingLoom] >> [i:LivingMahoganyWand]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+LivingWoodWand: {
+	Label: "[i:LivingWoodWand] Living Wood Wand"
+	Tooltip:
+		'''
+		[i/s10:Wood] @ [i:LivingLoom] >> [i:LivingWoodWand]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+RichMahoganyLeafWand: {
+	Label: "[i:LivingMahoganyLeafWand] Rich Mahogany Leaf Wand"
+	Tooltip:
+		'''
+		[i/s10:RichMahogany] @ [i:LivingLoom] >> [i:LivingMahoganyLeafWand]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+ShadowKey: {
+	Label: "[i:ShadowKey] Shadow Key"
+	Tooltip:
+		'''
+		[i:GoldenKey] [i/s10:Obsidian] [i/s5:Bone] @ [i:IronAnvil] >> [i:ShadowKey]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+StaffOfRegrowth: {
+	Label: "[i:StaffofRegrowth] Staff of Regrowth"
+	Tooltip:
+		'''
+		[i/s10:RichMahogany] [i/s5:JungleSpores] [i:JungleRose] @ [i:WorkBench] >> [i:StaffofRegrowth]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+FlareGun: {
+	Label: "[i:FlareGun] Flare Gun"
+	Tooltip:
+		'''
+		[i/s5:CalamityVanillaItemRecipes/AnyCopperBar] [i/s10:Torch] @ [i:IronAnvil] >> [i:FlareGun]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+IceBoomerang: {
+	Label: "[i:IceBoomerang] Ice Boomerang"
+	Tooltip:
+		'''
+		[i:WoodenBoomerang] [i/s20:CalamityVanillaItemRecipes/AnyIceBlock] [i/s10:SnowBlock] [i:Shiverthorn] @ [i:IceMachine] >> [i:IceBoomerang]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+Shuriken: {
+	Label: "[i:Shuriken] Shuriken"
+	Tooltip:
+		'''
+		[i:CalamityVanillaItemRecipes/AnyIronBar] @ [i:IronAnvil] >> [i/s50:Shuriken]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}
+
+ThrowingKnife: {
+	Label: "[i:ThrowingKnife] Throwing Knife"
+	Tooltip:
+		'''
+		[i:CalamityVanillaItemRecipes/AnyIronBar] @ [i:IronAnvil] >> [i/s50:ThrowingKnife]
+
+		{$Substitutions.Removed_2_1_0}
+		'''
+}

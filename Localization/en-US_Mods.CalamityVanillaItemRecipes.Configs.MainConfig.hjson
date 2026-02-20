@@ -1,0 +1,578 @@
+DisplayName: 3. [c/{$Substitutions.Colours.CalamityRed}:Calamity Items]
+
+Headers: {
+	AncientBoneDust: "[i:CalamityVanillaItemRecipes/AncientBoneDust] Ancient Bone Dust"
+	BloodOrb: "[i:CalamityVanillaItemRecipes/BloodOrb] Blood Orb"
+	BloodOrbPotions: "[i:CalamityVanillaItemRecipes/BloodOrb] Blood Orb - Potions"
+	EssenceOfEleum: "[i:CalamityVanillaItemRecipes/EssenceofEleum] Essence of Eleum"
+}
+
+AncientBoneDust_Enabled: {
+	Label: Enable Ancient Bone Dust
+	Tooltip: "{$Substitutions.ItemsTooltip}"
+}
+
+FledglingWings: {
+	Label: "[i:CreativeWings] Fledgling Wings [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i/s2:CalamityVanillaItemRecipes/AncientBoneDust] [i/s5:Cloud] [i/s10:Feather] @ [i:IronAnvil] >> [i:CreativeWings]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+ArmorPolish: {
+	Label: "[i:ArmorPolish] Armor Polish [c/{$Substitutions.Colours.Removed}:(removed)]"
+	Tooltip:
+		'''
+		[i/s10:Bone] [i/s3:CalamityVanillaItemRecipes/AncientBoneDust] @ [i:IronAnvil] >> [i:ArmorPolish]
+
+		{$Substitutions.Removed_2_1_0}
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+BloodOrb_Enabled: {
+	Label: Enable Blood Orbs
+	Tooltip: "{$Substitutions.ItemsTooltip}"
+}
+
+BloodyTear: {
+	Label: "[i:BloodMoonStarter] Bloody Tear [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i/s10:CalamityVanillaItemRecipes/BloodOrb] [i/s3:CalamityVanillaItemRecipes/AnyCopperBar] @ [i:IronAnvil] >> [i:BloodMoonStarter]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+MoneyTrough: {
+	Label: "[i:MoneyTrough] Money Trough [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:PiggyBank] [i/s2:Feather] [i:CalamityVanillaItemRecipes/BloodOrb] [i/s15:GoldCoin] @ [i:IronAnvil] >> [i:MoneyTrough]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+BloodOrb_Recipe: {
+	Label: "[i:CalamityVanillaItemRecipes/BloodOrb] Blood Orb [c/{$Substitutions.Colours.Removed}:(removed)]"
+	Tooltip:
+		'''
+		[i:BloodMoonStarter] >> [i/s10:CalamityVanillaItemRecipes/BloodOrb]
+		[c/{$Substitutions.Colours.RecipeCondition}:(By hand)]
+
+		{$Substitutions.Removed_2_1_0}
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+Vitamins: {
+	Label: "[i:Vitamins] Vitamins [c/{$Substitutions.Colours.Removed}:(removed)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s3:Waterleaf] [i/s3:Blinkroot] [i/s3:Daybloom] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:Vitamins]
+
+		{$Substitutions.Removed_2_1_0}
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+EnableAllPotions: {
+	Label: "[c/{$Substitutions.Colours.Enable}:Enable All Potions]"
+	Tooltip: ""
+}
+
+DisableAllPotions: {
+	Label: "[c/{$Substitutions.Colours.Disable}:Disable All Potions]"
+	Tooltip: ""
+}
+
+AmmoReservationPotion: {
+	Label: "[i:AmmoReservationPotion] Ammo Reservation Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:AmmoReservationPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+ArcheryPotion: {
+	Label: "[i:ArcheryPotion] Archery Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s10:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:ArcheryPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+BattlePotion: {
+	Label: "[i:BattlePotion] Battle Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s10:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:BattlePotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+BiomeSightPotion: {
+	Label: "[i:BiomeSightPotion] Biome Sight Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s10:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:BiomeSightPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+BuilderPotion: {
+	Label: "[i:BuilderPotion] Builder Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:BuilderPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+CalmingPotion: {
+	Label: "[i:CalmingPotion] Calming Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s10:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:CalmingPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+CratePotion: {
+	Label: "[i:CratePotion] Crate Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:CratePotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+DangersensePotion: {
+	Label: "[i:TrapsightPotion] Dangersense Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:TrapsightPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+EndurancePotion: {
+	Label: "[i:EndurancePotion] Endurance Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s15:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:EndurancePotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+FeatherfallPotion: {
+	Label: "[i:FeatherfallPotion] Featherfall Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:FeatherfallPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+FishingPotion: {
+	Label: "[i:FishingPotion] Fishing Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:FishingPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+FlipperPotion: {
+	Label: "[i:FlipperPotion] Flipper Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:FlipperPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+GenderChangePotion: {
+	Label: "[i:GenderChangePotion] Gender Change Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:GenderChangePotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+GillsPotion: {
+	Label: "[i:GillsPotion] Gills Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:GillsPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+GravitationPotion: {
+	Label: "[i:GravitationPotion] Gravitation Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s10:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:GravitationPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+GreaterLuckPotion: {
+	Label: "[i:LuckPotionGreater] Greater Luck Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s15:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:LuckPotionGreater]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+HeartreachPotion: {
+	Label: "[i:HeartreachPotion] Heartreach Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s15:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:HeartreachPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+HunterPotion: {
+	Label: "[i:HunterPotion] Hunter Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:HunterPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+InfernoPotion: {
+	Label: "[i:InfernoPotion] Inferno Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s15:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:InfernoPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+InvisibilityPotion: {
+	Label: "[i:InvisibilityPotion] Invisibility Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:InvisibilityPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+IronskinPotion: {
+	Label: "[i:IronskinPotion] Ironskin Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:IronskinPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+LesserLuckPotion: {
+	Label: "[i:LuckPotionLesser] Lesser Luck Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:LuckPotionLesser]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+LifeforcePotion: {
+	Label: "[i:LifeforcePotion] Lifeforce Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s15:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:LifeforcePotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+LovePotion: {
+	Label: "[i:LovePotion] Love Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:LovePotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+LuckPotion: {
+	Label: "[i:LuckPotion] Luck Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s10:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:LuckPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+MagicPowerPotion: {
+	Label: "[i:MagicPowerPotion] Magic Power Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s10:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:MagicPowerPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+ManaRegenerationPotion: {
+	Label: "[i:ManaRegenerationPotion] Mana Regeneration Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s10:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:ManaRegenerationPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+MiningPotion: {
+	Label: "[i:MiningPotion] Mining Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:MiningPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+NightOwlPotion: {
+	Label: "[i:NightOwlPotion] Night Owl Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:NightOwlPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+ObsidianSkinPotion: {
+	Label: "[i:ObsidianSkinPotion] Obsidian Skin Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s10:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:ObsidianSkinPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+PotionOfReturn: {
+	Label: "[i:PotionOfReturn] Potion of Return [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s10:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:PotionOfReturn]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+RagePotion: {
+	Label: "[i:RagePotion] Rage Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s15:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:RagePotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+RecallPotion: {
+	Label: "[i:RecallPotion] Recall Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:RecallPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+RegenerationPotion: {
+	Label: "[i:RegenerationPotion] Regeneration Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:RegenerationPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+ShinePotion: {
+	Label: "[i:ShinePotion] Shine Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:ShinePotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+SonarPotion: {
+	Label: "[i:SonarPotion] Sonar Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:SonarPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+SpelunkerPotion: {
+	Label: "[i:SpelunkerPotion] Spelunker Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s10:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:SpelunkerPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+StinkPotion: {
+	Label: "[i:StinkPotion] Stink Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:StinkPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+SummoningPotion: {
+	Label: "[i:SummoningPotion] Summoning Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s15:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:SummoningPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+SwiftnessPotion: {
+	Label: "[i:SwiftnessPotion] Swiftness Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:SwiftnessPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+TeleportationPotion: {
+	Label: "[i:TeleportationPotion] Teleportation Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:TeleportationPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+ThornsPotion: {
+	Label: "[i:ThornsPotion] Thorns Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:ThornsPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+TitanPotion: {
+	Label: "[i:TitanPotion] Titan Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:TitanPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+WarmthPotion: {
+	Label: "[i:WarmthPotion] Warmth Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s10:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:WarmthPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+WaterWalkingPotion: {
+	Label: "[i:WaterWalkingPotion] Water Walking Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:WaterWalkingPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+WormholePotion: {
+	Label: "[i:WormholePotion] Wormhole Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s5:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:WormholePotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+WrathPotion: {
+	Label: "[i:WrathPotion] Wrath Potion [c/{$Substitutions.Colours.Current}:(current)]"
+	Tooltip:
+		'''
+		[i:BottledWater] [i/s15:CalamityVanillaItemRecipes/BloodOrb] @ [i:AlchemyTable] >> [i:WrathPotion]
+
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+EssenceofEleum_Enabled: {
+	Label: Enable Essence of Eleum
+	Tooltip: "{$Substitutions.ItemsTooltip}"
+}
+
+FrozenTurtleShell: {
+	Label: "[i:FrozenTurtleShell] Frozen Turtle Shell [c/{$Substitutions.Colours.Removed}:(removed)]"
+	Tooltip:
+		'''
+		[i/s2:TurtleShell] [i/s4:CalamityVanillaItemRecipes/EssenceofEleum] @ [i:IceMachine] >> [i:FrozenTurtleShell]
+
+		{$Substitutions.Removed_2_1_0}
+		{$Substitutions.CalamityDisableItem}
+		'''
+}

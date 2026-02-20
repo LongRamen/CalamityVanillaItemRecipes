@@ -1,0 +1,702 @@
+DisplayName: 1. [c/{$Substitutions.Colours.Current}:Current] Recipes
+
+EnableAll: {
+	Label: "[c/{$Substitutions.Colours.Enable}:Enable All]"
+	Tooltip: "{$Substitutions.CalamityDisableRecipe}"
+}
+
+DisableAll: {
+	Label: "[c/{$Substitutions.Colours.Disable}:Disable All]"
+	Tooltip: "{$Substitutions.CalamityDisableRecipe}"
+}
+
+Aglet: {
+	Label: "[i:Aglet] Aglet"
+	Tooltip:
+		'''
+		[i/s5:CalamityVanillaItemRecipes/AnyCopperBar] @ [i:IronAnvil] >> [i:Aglet]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+AnkletOfTheWind: {
+	Label: "[i:AnkletoftheWind] Anklet of the Wind"
+	Tooltip:
+		'''
+		[i/s15:JungleSpores] [i/s5:Cloud] [i/s5:PinkGel] @ [i:IronAnvil] >> [i:AnkletoftheWind]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+BlizzardInABottle: {
+	Label: "[i:BlizzardinaBottle] Blizzard in a Bottle"
+	Tooltip:
+		'''
+		[i:Bottle] [i/s5:Cloud] [i/s5:SnowBlock] [i/s3:Feather] @ [i:IronAnvil] >> [i:BlizzardinaBottle]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+BrainOfConfusion: {
+	Label: "[i:BrainOfConfusion] Brain of Confusion"
+	Tooltip:
+		'''
+		[i:WormScarf] @ [i:TinkerersWorkshop] >> [i:BrainOfConfusion]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+CloudInABottle: {
+	Label: "[i:CloudinaBottle] Cloud in a Bottle"
+	Tooltip:
+		'''
+		[i:Bottle] [i/s5:Cloud] [i/s2:Feather] @ [i:IronAnvil] >> [i:CloudinaBottle]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+CobaltShield: {
+	Label: "[i:CobaltShield] Cobalt Shield"
+	Tooltip:
+		'''
+		[i/s5:CalamityVanillaItemRecipes/AnyCobaltBar] @ [i:IronAnvil] >> [i:CobaltShield]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+CrimsonHeart: {
+	Label: "[i:CrimsonHeart] Crimson Heart"
+	Tooltip:
+		'''
+		[i:ShadowOrb] @ [i:TinkerersWorkshop] >> [i:CrimsonHeart]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+FlameWakerBoots: {
+	Label: "[i:FlameWakerBoots] Flame Waker Boots"
+	Tooltip:
+		'''
+		[i/s8:Silk] [i/s5:HellstoneBar] [i/s4:Obsidian] @ [i:IronAnvil] >> [i:FlameWakerBoots]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+FleshKnuckles: {
+	Label: "[i:FleshKnuckles] Flesh Knuckles"
+	Tooltip:
+		'''
+		[i:PutridScent] @ [i:TinkerersWorkshop] >> [i:FleshKnuckles]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+FlowerBoots: {
+	Label: "[i:FlowerBoots] Flower Boots"
+	Tooltip:
+		'''
+		[i/s7:Silk] [i:JungleRose] [i/s5:JungleGrassSeeds] @ [i:Loom] >> [i:FlowerBoots]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+FrogLeg: {
+	Label: "[i:FrogLeg] Frog Leg"
+	Tooltip:
+		'''
+		[i/s6:Frog] @ [i:IronAnvil] >> [i:FrogLeg]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+HandWarmer: {
+	Label: "[i:HandWarmer] Hand Warmer"
+	Tooltip:
+		'''
+		[i/s10:Silk] @ [i:Loom] >> [i:HandWarmer]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+HermesBoots: {
+	Label: "[i:HermesBoots] Hermes Boots"
+	Tooltip:
+		'''
+		[i/s10:Silk] [i/s5:SwiftnessPotion] @ [i:Loom] >> [i:HermesBoots]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+IceSkates: {
+	Label: "[i:IceSkates] Ice Skates"
+	Tooltip:
+		'''
+		[i/s3:FlinxFur] [i/s5:CalamityVanillaItemRecipes/AnyIronBar] @ [i:IronAnvil] >> [i:IceSkates]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+LavaCharm: {
+	Label: "[i:LavaCharm] Lava Charm"
+	Tooltip:
+		'''
+		[i/s3:LavaBucket] [i/s5:Obsidian] [i/s5:CalamityVanillaItemRecipes/AnyGoldBar] @ [i:IronAnvil] >> [i:LavaCharm]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+LuckyHorseshoe: {
+	Label: "[i:LuckyHorseshoe] Lucky Horseshoe"
+	Tooltip:
+		'''
+		[i/s8:CalamityVanillaItemRecipes/AnyGoldBar] @ [i:IronAnvil] >> [i:LuckyHorseshoe]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+ObsidianRose: {
+	Label: "[i:ObsidianRose] Obsidian Rose"
+	Tooltip:
+		'''
+		[i:JungleRose] [i/s5:Obsidian] [i/s5:Hellstone] @ [i:IronAnvil] >> [i:ObsidianRose]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+PutridScent: {
+	Label: "[i:PutridScent] Putrid Scent"
+	Tooltip:
+		'''
+		[i:FleshKnuckles] @ [i:TinkerersWorkshop] >> [i:PutridScent]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+Radar: {
+	Label: "[i:Radar] Radar"
+	Tooltip:
+		'''
+		[i/s5:CalamityVanillaItemRecipes/AnyIronBar] @ [i:IronAnvil] >> [i:Radar]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+ShadowOrb: {
+	Label: "[i:ShadowOrb] Shadow Orb"
+	Tooltip:
+		'''
+		[i:CrimsonHeart] @ [i:TinkerersWorkshop] >> [i:ShadowOrb]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+ShinyRedBalloon: {
+	Label: "[i:ShinyRedBalloon] Shiny Red Balloon"
+	Tooltip:
+		'''
+		[i:WhiteString] [i/s10:Cloud] @ [i:Solidifier] >> [i:ShinyRedBalloon]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+StepStool: {
+	Label: "[i:PortableStool] Step Stool"
+	Tooltip:
+		'''
+		[i/s10:CalamityVanillaItemRecipes/AnyWood] @ [i:Sawmill] >> [i:PortableStool]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+WaterWalkingBoots: {
+	Label: "[i:WaterWalkingBoots] Water Walking Boots"
+	Tooltip:
+		'''
+		[i/s5:Leather] [i/s5:WaterWalkingPotion] @ [i:IronAnvil] >> [i:WaterWalkingBoots]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+WormScarf: {
+	Label: "[i:WormScarf] Worm Scarf"
+	Tooltip:
+		'''
+		[i:BrainOfConfusion] @ [i:TinkerersWorkshop] >> [i:WormScarf]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+RocketI: {
+	Label: "[i:RocketI] Rocket I"
+	Tooltip:
+		'''
+		[i:CalamityVanillaItemRecipes/AnyIronBar] [i/s100:EmptyBullet] [i/s4:ExplosivePowder] @ [i:IronAnvil] >> [i/s100:RocketI]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+RocketII: {
+	Label: "[i:RocketII] Rocket II"
+	Tooltip:
+		'''
+		[i:CalamityVanillaItemRecipes/AnyIronBar] [i/s100:EmptyBullet] [i/s5:ExplosivePowder] @ [i:IronAnvil] >> [i/s100:RocketII]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+SnowCoat: {
+	Label: "[i:EskimoCoat] Snow Coat"
+	Tooltip:
+		'''
+		[i/s8:Silk] [i/s2:FlinxFur] @ [i:Loom] >> [i:EskimoCoat]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+SnowHood: {
+	Label: "[i:EskimoHood] Snow Hood"
+	Tooltip:
+		'''
+		[i/s4:Silk] [i:FlinxFur] @ [i:Loom] >> [i:EskimoHood]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+SnowPants: {
+	Label: "[i:EskimoPants] Snow Pants"
+	Tooltip:
+		'''
+		[i/s6:Silk] [i:FlinxFur] @ [i:Loom] >> [i:EskimoPants]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+LifeCrystal: {
+	Label: "[i:LifeCrystal] Life Crystal"
+	Tooltip:
+		'''
+		[i/s5:StoneBlock] [i/s2:Ruby] [i:HealingPotion] @ [i:IronAnvil] >> [i:LifeCrystal]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+SnowGlobe: {
+	Label: "[i:SnowGlobe] Snow Globe"
+	Tooltip:
+		'''
+		[i/s10:SnowBlock] [i/s5:Glass] [i/s3:SoulofLight] [i/s3:SoulofNight] @ [i:IronAnvil] >> [i:SnowGlobe]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+BastStatue: {
+	Label: "[i:CatBast] Bast Statue"
+	Tooltip:
+		'''
+		[i/s7:CalamityVanillaItemRecipes/AnyIronBar] [i/s3:CalamityVanillaItemRecipes/AnyGoldBar] [i:Ruby] @ [i:IronAnvil] >> [i:CatBast]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+CrossGraveMarker: {
+	Label: "[i:CrossGraveMarker] Cross Grave Marker"
+	Tooltip:
+		'''
+		[i/s15:CalamityVanillaItemRecipes/AnyWood] @ [i:Sawmill] >> [i:CrossGraveMarker]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+GoldenCrossGraveMarker: {
+	Label: "[i:RichGravestone1] Golden Cross Grave Marker"
+	Tooltip:
+		'''
+		[i/s15:CalamityVanillaItemRecipes/AnyStoneBlock] [i:CalamityVanillaItemRecipes/AnyGoldBar] @ [i:HeavyWorkBench] >> [i:RichGravestone1]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+GoldenGraveMarker: {
+	Label: "[i:RichGravestone3] Golden Grave Marker"
+	Tooltip:
+		'''
+		[i/s15:CalamityVanillaItemRecipes/AnyStoneBlock] [i:CalamityVanillaItemRecipes/AnyGoldBar] @ [i:HeavyWorkBench] >> [i:RichGravestone3]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+GoldenGravestone: {
+	Label: "[i:RichGravestone4] Golden Gravestone"
+	Tooltip:
+		'''
+		[i/s15:CalamityVanillaItemRecipes/AnyStoneBlock] [i:CalamityVanillaItemRecipes/AnyGoldBar] @ [i:HeavyWorkBench] >> [i:RichGravestone4]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+GoldenHeadstone: {
+	Label: "[i:RichGravestone5] Golden Headstone"
+	Tooltip:
+		'''
+		[i/s15:CalamityVanillaItemRecipes/AnyStoneBlock] [i:CalamityVanillaItemRecipes/AnyGoldBar] @ [i:HeavyWorkBench] >> [i:RichGravestone5]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+GoldenTombstone: {
+	Label: "[i:RichGravestone2] Golden Tombstone"
+	Tooltip:
+		'''
+		[i/s15:CalamityVanillaItemRecipes/AnyStoneBlock] [i:CalamityVanillaItemRecipes/AnyGoldBar] @ [i:HeavyWorkBench] >> [i:RichGravestone2]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+GraveMarker: {
+	Label: "[i:GraveMarker] Grave Marker"
+	Tooltip:
+		'''
+		[i/s15:CalamityVanillaItemRecipes/AnyWood] @ [i:Sawmill] >> [i:GraveMarker]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+Gravestone: {
+	Label: "[i:Gravestone] Gravestone"
+	Tooltip:
+		'''
+		[i/s15:CalamityVanillaItemRecipes/AnyStoneBlock] @ [i:HeavyWorkBench] >> [i:Gravestone]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+Headstone: {
+	Label: "[i:Headstone] Headstone"
+	Tooltip:
+		'''
+		[i/s15:CalamityVanillaItemRecipes/AnyStoneBlock] @ [i:HeavyWorkBench] >> [i:Headstone]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+Obelisk: {
+	Label: "[i:Obelisk] Obelisk"
+	Tooltip:
+		'''
+		[i/s15:CalamityVanillaItemRecipes/AnyStoneBlock] @ [i:HeavyWorkBench] >> [i:Obelisk]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+Tombstone: {
+	Label: "[i:Tombstone] Tombstone"
+	Tooltip:
+		'''
+		[i/s15:CalamityVanillaItemRecipes/AnyStoneBlock] @ [i:HeavyWorkBench] >> [i:Tombstone]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+EncumberingStone: {
+	Label: "[i:EncumberingStone] Encumbering Stone"
+	Tooltip:
+		'''
+		[i/s100:StoneBlock] @ [i:IronAnvil] >> [i:EncumberingStone]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+MagicConch: {
+	Label: "[i:MagicConch] Magic Conch"
+	Tooltip:
+		'''
+		[i/s20:ShellPileBlock] [i:WhitePearl] @ [i:IronAnvil] >> [i:MagicConch]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+Umbrella: {
+	Label: "[i:Umbrella] Umbrella"
+	Tooltip:
+		'''
+		[i/s5:Silk] [i/s2:CalamityVanillaItemRecipes/AnyCopperBar] @ [i:Loom] >> [i:Umbrella]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+TendonHook: {
+	Label: "[i:TendonHook] Tendon Hook"
+	Tooltip:
+		'''
+		[i:WormHook] @ [i:TinkerersWorkshop] >> [i:TendonHook]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+WormHook: {
+	Label: "[i:WormHook] Worm Hook"
+	Tooltip:
+		'''
+		[i:TendonHook] @ [i:TinkerersWorkshop] >> [i:WormHook]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+BallOHurt: {
+	Label: "[i:BallOHurt] Ball O' Hurt"
+	Tooltip:
+		'''
+		[i:TheRottedFork] @ [i:IronAnvil] >> [i:BallOHurt]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+ChainGuillotines: {
+	Label: "[i:ChainGuillotines] Chain Guillotines"
+	Tooltip:
+		'''
+		[i:FetidBaghnakhs] @ [i:IronAnvil] >> [i:ChainGuillotines]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+ClingerStaff: {
+	Label: "[i:ClingerStaff] Clinger Staff"
+	Tooltip:
+		'''
+		[i:SoulDrain] @ [i:IronAnvil] >> [i:ClingerStaff]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+CrimsonRod: {
+	Label: "[i:CrimsonRod] Crimson Rod"
+	Tooltip:
+		'''
+		[i:Vilethorn] @ [i:IronAnvil] >> [i:CrimsonRod]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+DartPistol: {
+	Label: "[i:DartPistol] Dart Pistol"
+	Tooltip:
+		'''
+		[i:DartRifle] @ [i:IronAnvil] >> [i:DartPistol]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+DartRifle: {
+	Label: "[i:DartRifle] Dart Rifle"
+	Tooltip:
+		'''
+		[i:DartPistol] @ [i:IronAnvil] >> [i:DartRifle]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+FetidBaghnakhs: {
+	Label: "[i:FetidBaghnakhs] Fetid Baghnakhs"
+	Tooltip:
+		'''
+		[i:ChainGuillotines] @ [i:IronAnvil] >> [i:FetidBaghnakhs]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+FinchStaff: {
+	Label: "[i:BabyBirdStaff] Finch Staff"
+	Tooltip:
+		'''
+		[i:Bird] [i/s8:CalamityVanillaItemRecipes/AnyWood] @ [i:WorkBench] >> [i:BabyBirdStaff]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+LifeDrain: {
+	Label: "[i:SoulDrain] Life Drain"
+	Tooltip:
+		'''
+		[i:ClingerStaff] @ [i:IronAnvil] >> [i:SoulDrain]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+Musket: {
+	Label: "[i:Musket] Musket"
+	Tooltip:
+		'''
+		[i:TheUndertaker] @ [i:IronAnvil] >> [i:Musket]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+PulseBow: {
+	Label: "[i:PulseBow] Pulse Bow"
+	Tooltip:
+		'''
+		[i/s16:ShroomiteBar] @ [i:MythrilAnvil] >> [i:PulseBow]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+SergeantUnitedShield: {
+	Label: "[i:BouncingShield] Sergeant United Shield"
+	Tooltip:
+		'''
+		[i/s12:CalamityVanillaItemRecipes/AnyCobaltBar] [i/s4:SoulofLight] @ [i:IronAnvil] >> [i:BouncingShield]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+SlimeStaff: {
+	Label: "[i:SlimeStaff] Slime Staff"
+	Tooltip:
+		'''
+		[i/6:CalamityVanillaItemRecipes/AnyWood] [i/s40:Gel] @ [i:IronAnvil] >> [i:SlimeStaff]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+TheRottedFork: {
+	Label: "[i:TheRottedFork] The Rotted Fork"
+	Tooltip:
+		'''
+		[i:BallOHurt] @ [i:IronAnvil] >> [i:TheRottedFork]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+TheUndertaker: {
+	Label: "[i:TheUndertaker] The Undertaker"
+	Tooltip:
+		'''
+		[i:Musket] @ [i:IronAnvil] >> [i:TheUndertaker]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+Vilethorn: {
+	Label: "[i:Vilethorn] Vilethorn"
+	Tooltip:
+		'''
+		[i:CrimsonRod] @ [i:IronAnvil] >> [i:Vilethorn]
+		[c/{$Substitutions.Colours.RecipeCondition}:(In a Graveyard)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+WandOfSparking: {
+	Label: "[i:WandofSparking] Wand Of Sparking"
+	Tooltip:
+		'''
+		[i/s5:Wood] [i/s3:Torch] [i:FallenStar] @ [i:IronAnvil] >> [i:WandofSparking]
+		[c/{$Substitutions.Colours.RecipeCondition}:(Not in Remix worlds)]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+WaterBolt: {
+	Label: "[i:WaterBolt] Water Bolt"
+	Tooltip:
+		'''
+		[i:SpellTome] [i/s3:Waterleaf] [i:WaterCandle] @ [i:Bookcase] >> [i:WaterBolt]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
+WoodenBoomerang: {
+	Label: "[i:WoodenBoomerang] Wooden Boomerang"
+	Tooltip:
+		'''
+		[i/s7:Wood] @ [i:WorkBench] >> [i:WoodenBoomerang]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}

@@ -1,0 +1,39 @@
+CalamityDisableItem: "[c/{$Colours.CalamityRed}:(You should probably disable the added items if you're playing with Calamity enabled)]"
+CalamityDisableRecipe: "[c/{$Colours.CalamityRed}:(You should probably disable all current recipes if you're playing with Calamity enabled)]"
+Removed_2_0_7: "[c/{$Colours.Removed}:(Recipe removed in Calamity v2.0.7)]"
+Removed_2_1_0: "[c/{$Colours.Removed}:(Recipe removed in Calamity v2.1.0)]"
+ItemsTooltip:
+	'''
+	Turning this off disables all methods of obtaining this item, but it does not unload the item
+	from the game, so any items that are already in the inventory or a chest will stay there.
+
+	{$CalamityDisableItem}
+	'''
+DeprecatedTooltip:
+	'''
+	[c/{$Colours.Deprecated}:This item is now deprecated and is unobtainable and unusable.]
+	[c/{$Colours.Deprecated}:Any remaining can be sold for their original sell price.]
+	'''
+
+Headers: {
+	Accessories: Accessories
+	Ammo: Ammo
+	Armor: Armor
+	Consumables: Consumables
+	CraftingStations: Crafting Stations
+	Materials: Materials
+	Placeables: Placeables
+	Potions: Potions & Food
+	Tools: Tools
+	Weapons: Weapons
+}
+
+Colours: {
+	CalamityRed: A3191A
+	Enable: 96FF96
+	Disable: FF9696
+	Current: 05C8FF
+	Removed: FFFF0A
+	RecipeCondition: "828282"
+	Deprecated: FFC896
+}

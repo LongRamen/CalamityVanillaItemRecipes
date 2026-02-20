@@ -115,7 +115,7 @@ public class CurrentRecipesConfig : ModConfig // 1. Current Recipes
 
     #region ACCESSORIES
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Accessories")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Accessories")]
 
     // Aglet
     [DefaultValue(defaultValue)]
@@ -242,7 +242,7 @@ public class CurrentRecipesConfig : ModConfig // 1. Current Recipes
 
     #region AMMO
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Ammo")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Ammo")]
 
     // Rocket I
     [DefaultValue(defaultValue)]
@@ -259,7 +259,7 @@ public class CurrentRecipesConfig : ModConfig // 1. Current Recipes
 
     #region ARMOR
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Armor")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Armor")]
 
     // Snow Coat
     [DefaultValue(defaultValue)]
@@ -281,7 +281,7 @@ public class CurrentRecipesConfig : ModConfig // 1. Current Recipes
 
     #region CONSUMABLES
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Consumables")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Consumables")]
 
     // Life Crystal
     [DefaultValue(defaultValue)]
@@ -298,7 +298,7 @@ public class CurrentRecipesConfig : ModConfig // 1. Current Recipes
 
     #region PLACEABLES
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Placeables")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Placeables")]
 
     // Bast Statue
     [DefaultValue(defaultValue)]
@@ -365,7 +365,7 @@ public class CurrentRecipesConfig : ModConfig // 1. Current Recipes
 
     #region TOOLS
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Tools")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Tools")]
 
     // Encumbering Stone
     [DefaultValue(defaultValue)]
@@ -397,7 +397,7 @@ public class CurrentRecipesConfig : ModConfig // 1. Current Recipes
 
     #region WEAPONS
 
-    [Header("$Mods.CalamityVanillaItemRecipes.CommonSubstitutions.Headers.Weapons")]
+    [Header("$Mods.CalamityVanillaItemRecipes.Substitutions.Headers.Weapons")]
 
     // Ball O' Hurt
     [DefaultValue(defaultValue)]

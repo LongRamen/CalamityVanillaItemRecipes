@@ -1,0 +1,74 @@
+AncientBoneDust: {
+	DisplayName: Ancient Bone Dust
+	Tooltip: ""
+}
+
+BloodOrb: {
+	DisplayName: Blood Orb
+	Tooltip: ""
+}
+
+CoreofSunlight: {
+	DisplayName: Core of Sunlight
+	Tooltip: "{$Substitutions.DeprecatedTooltip}"
+}
+
+DemonicBoneAsh: {
+	DisplayName: Demonic Bone Ash
+	Tooltip: "{$Substitutions.DeprecatedTooltip}"
+}
+
+EssenceofEleum: {
+	DisplayName: Essence of Eleum
+	Tooltip: The essence of cold creatures
+}
+
+EssenceofSunlight: {
+	DisplayName: Essence of Sunlight
+	Tooltip: "{$Substitutions.DeprecatedTooltip}"
+}
+
+MurkyPaste: {
+	DisplayName: Murky Paste
+	Tooltip: "{$Substitutions.DeprecatedTooltip}"
+}
+
+AnyCobaltBar: {
+	DisplayName: Any Cobalt Bar
+	Tooltip: ""
+}
+
+AnyCopperBar: {
+	DisplayName: Any Copper Bar
+	Tooltip: ""
+}
+
+AnyGoldBar: {
+	DisplayName: Any Gold Bar
+	Tooltip: ""
+}
+
+AnyIceBlock: {
+	DisplayName: Any Ice Block
+	Tooltip: ""
+}
+
+AnyIronBar: {
+	DisplayName: Any Iron Bar
+	Tooltip: ""
+}
+
+AnyStoneBlock: {
+	DisplayName: Any Stone Block
+	Tooltip: ""
+}
+
+AnyVilePowder: {
+	DisplayName: Any Vile Powder
+	Tooltip: ""
+}
+
+AnyWood: {
+	DisplayName: Any Wood
+	Tooltip: ""
+}
