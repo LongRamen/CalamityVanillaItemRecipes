@@ -12,8 +12,8 @@ public class AncientBoneDust : ModItem
         Item.value = Item.sellPrice(0, 0, 0, 10);
         Item.rare = ItemRarityID.Blue;
         Item.maxStack = 9999;
-        Item.width = 36;
-        Item.height = 22;
+        Item.width = 20;
+        Item.height = 20;
     }
     
     public override void AddRecipes()

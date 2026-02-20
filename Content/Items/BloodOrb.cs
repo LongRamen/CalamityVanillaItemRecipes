@@ -19,8 +19,8 @@ public class BloodOrb : ModItem
         Item.value = Item.sellPrice(0, 0, 0, 40);
         Item.rare = ItemRarityID.Green;
         Item.maxStack = 9999;
-        Item.width = 14;
-        Item.height = 24;
+        Item.width = 16;
+        Item.height = 28;
     }
     
     public override void AddRecipes()

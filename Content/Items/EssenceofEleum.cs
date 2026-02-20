@@ -20,8 +20,8 @@ public class EssenceofEleum : ModItem
         Item.value = Item.sellPrice(0, 0, 4, 0);
         Item.rare = ItemRarityID.LightRed;
         Item.maxStack = 9999;
-        Item.width = 24;
-        Item.height = 20;
+        Item.width = 28;
+        Item.height = 24;
     }
     
     public override void AddRecipes()
