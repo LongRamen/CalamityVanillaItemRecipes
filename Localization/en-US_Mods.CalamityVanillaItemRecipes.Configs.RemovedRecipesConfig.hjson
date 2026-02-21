@@ -1,12 +1,12 @@
 DisplayName: 2. [c/{$Substitutions.Colours.Removed}:Removed] Recipes
 
 EnableAll: {
-	Label: "[c/{$Substitutions.Colours.Enable}:Enable All]"
+	Label: "[c/{$Substitutions.Colours.Enable}:Enable all]"
 	Tooltip: ""
 }
 
 DisableAll: {
-	Label: "[c/{$Substitutions.Colours.Disable}:Disable All]"
+	Label: "[c/{$Substitutions.Colours.Disable}:Disable all]"
 	Tooltip: ""
 }
 

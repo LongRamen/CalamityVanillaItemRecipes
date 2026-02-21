@@ -35,40 +35,40 @@ MurkyPaste: {
 
 AnyCobaltBar: {
 	DisplayName: Any Cobalt Bar
-	Tooltip: ""
+	Tooltip: "{$Substitutions.DummyTooltip}"
 }
 
 AnyCopperBar: {
 	DisplayName: Any Copper Bar
-	Tooltip: ""
+	Tooltip: "{$Substitutions.DummyTooltip}"
 }
 
 AnyGoldBar: {
 	DisplayName: Any Gold Bar
-	Tooltip: ""
+	Tooltip: "{$Substitutions.DummyTooltip}"
 }
 
 AnyIceBlock: {
 	DisplayName: Any Ice Block
-	Tooltip: ""
+	Tooltip: "{$Substitutions.DummyTooltip}"
 }
 
 AnyIronBar: {
 	DisplayName: Any Iron Bar
-	Tooltip: ""
+	Tooltip: "{$Substitutions.DummyTooltip}"
 }
 
 AnyStoneBlock: {
 	DisplayName: Any Stone Block
-	Tooltip: ""
+	Tooltip: "{$Substitutions.DummyTooltip}"
 }
 
 AnyVilePowder: {
 	DisplayName: Any Vile Powder
-	Tooltip: ""
+	Tooltip: "{$Substitutions.DummyTooltip}"
 }
 
 AnyWood: {
 	DisplayName: Any Wood
-	Tooltip: ""
+	Tooltip: "{$Substitutions.DummyTooltip}"
 }

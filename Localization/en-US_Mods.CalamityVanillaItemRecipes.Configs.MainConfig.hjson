@@ -82,12 +82,12 @@ Vitamins: {
 }
 
 EnableAllPotions: {
-	Label: "[c/{$Substitutions.Colours.Enable}:Enable All Potions]"
+	Label: "[c/{$Substitutions.Colours.Enable}:Enable all potion recipes]"
 	Tooltip: ""
 }
 
 DisableAllPotions: {
-	Label: "[c/{$Substitutions.Colours.Disable}:Disable All Potions]"
+	Label: "[c/{$Substitutions.Colours.Disable}:Disable all potion recipes]"
 	Tooltip: ""
 }
 
