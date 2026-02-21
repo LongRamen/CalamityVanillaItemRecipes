@@ -7,6 +7,36 @@ Headers: {
 	EssenceOfEleum: "[i:CalamityVanillaItemRecipes/EssenceofEleum] Essence of Eleum"
 }
 
+EnableAllItemsAndRecipes: {
+	Label: "[c/{$Substitutions.Colours.Enable}:Enable all items and recipes]"
+	Tooltip: "{$Substitutions.CalamityDisableItem}"
+}
+
+DisableAllItemsAndRecipes: {
+	Label: "[c/{$Substitutions.Colours.Disable}:Disable all items and recipes]"
+	Tooltip: "{$Substitutions.CalamityDisableItem}"
+}
+
+EnableAllCurrentRecipes: {
+	Label: "[c/{$Substitutions.Colours.Enable}:Enable all current recipes]"
+	Tooltip: "{$Substitutions.CalamityDisableItem}"
+}
+
+DisableAllCurrentRecipes: {
+	Label: "[c/{$Substitutions.Colours.Disable}:Disable all current recipes]"
+	Tooltip: "{$Substitutions.CalamityDisableItem}"
+}
+
+EnableAllRemovedRecipes: {
+	Label: "[c/{$Substitutions.Colours.Enable}:Enable all removed recipes]"
+	Tooltip: "{$Substitutions.CalamityDisableItem}"
+}
+
+DisableAllRemovedRecipes: {
+	Label: "[c/{$Substitutions.Colours.Disable}:Disable all removed recipes]"
+	Tooltip: "{$Substitutions.CalamityDisableItem}"
+}
+
 AncientBoneDust_Enabled: {
 	Label: Enable Ancient Bone Dust
 	Tooltip: "{$Substitutions.ItemsTooltip}"

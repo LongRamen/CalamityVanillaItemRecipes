@@ -15,6 +15,103 @@ public class MainConfig : ModConfig // 3. Calamity Items
     public static MainConfig Instance => ModContent.GetInstance<MainConfig>();
 
 
+    #region Toggles
+
+    [DefaultValue(false)]
+    [JsonIgnore]
+    [ShowDespiteJsonIgnore]
+    public bool EnableAllItemsAndRecipes
+    {
+        get => false;
+        set { if (value) ToggleAllItemsAndRecipes(true); }
+    }
+
+    [DefaultValue(false)]
+    [JsonIgnore]
+    [ShowDespiteJsonIgnore]
+    public bool DisableAllItemsAndRecipes
+    {
+        get => false;
+        set { if (value) ToggleAllItemsAndRecipes(false); }
+    }
+
+    private void ToggleAllItemsAndRecipes(bool value)
+    {
+        // Ancient Bone Dust
+        AncientBoneDust_Enabled = value;
+        FledglingWings = value;
+        ArmorPolish = value;
+
+        // Blood Orb
+        BloodOrb_Enabled = value;
+        BloodyTear = value;
+        MoneyTrough = value;
+        BloodOrb_Recipe = value;
+        Vitamins = value;
+        ToggleAllPotions(value);
+
+        // Essence of Eleum
+        EssenceofEleum_Enabled = value;
+        FrozenTurtleShell = value;
+    }
+
+
+    [DefaultValue(false)]
+    [JsonIgnore]
+    [ShowDespiteJsonIgnore]
+    public bool EnableAllCurrentRecipes
+    {
+        get => false;
+        set { if (value) ToggleAllCurrentRecipes(true); }
+    }
+
+    [DefaultValue(false)]
+    [JsonIgnore]
+    [ShowDespiteJsonIgnore]
+    public bool DisableAllCurrentRecipes
+    {
+        get => false;
+        set { if (value) ToggleAllCurrentRecipes(false); }
+    }
+
+    private void ToggleAllCurrentRecipes(bool value)
+    {
+        FledglingWings = value;
+        BloodyTear = value;
+        MoneyTrough = value;
+        ToggleAllPotions(value);
+    }
+
+
+    [DefaultValue(false)]
+    [JsonIgnore]
+    [ShowDespiteJsonIgnore]
+    public bool EnableAllRemovedRecipes
+    {
+        get => false;
+        set { if (value) ToggleAllRemovedRecipes(true); }
+    }
+
+    [DefaultValue(false)]
+    [JsonIgnore]
+    [ShowDespiteJsonIgnore]
+    public bool DisableAllRemovedRecipes
+    {
+        get => false;
+        set { if (value) ToggleAllRemovedRecipes(false); }
+    }
+
+    private void ToggleAllRemovedRecipes(bool value)
+    {
+        ArmorPolish = value;
+        BloodOrb_Recipe = value;
+        Vitamins = value;
+        FrozenTurtleShell = value;
+    }
+
+    #endregion
+
+
     #region Ancient Bone Dust
 
     [Header("AncientBoneDust")]
@@ -412,22 +509,7 @@ public class MainConfig : ModConfig // 3. Calamity Items
             {
                 bool NewItemsEnabled = token.ToObject<bool>();
 
-                // Ancient Bone Dust
-                AncientBoneDust_Enabled = NewItemsEnabled;
-                FledglingWings = NewItemsEnabled;
-                ArmorPolish = NewItemsEnabled;
-
-                // Blood Orb
-                BloodOrb_Enabled = NewItemsEnabled;
-                BloodyTear = NewItemsEnabled;
-                MoneyTrough = NewItemsEnabled;
-                BloodOrb_Recipe = NewItemsEnabled;
-                Vitamins = NewItemsEnabled;
-                ToggleAllPotions(NewItemsEnabled);
-
-                // Essence of Eleum
-                EssenceofEleum_Enabled = NewItemsEnabled;
-                FrozenTurtleShell = NewItemsEnabled;
+                ToggleAllItemsAndRecipes(NewItemsEnabled);
             }
         }
         catch { }
