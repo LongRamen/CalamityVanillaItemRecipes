@@ -1,61 +1,41 @@
 CALAMITY'S VANILLA ITEM RECIPES
 
-Doing a vanilla playthrough but missing the convenient recipes Calamity adds for certain vanilla items?
-This mod adds those recipes back into the game to improve your experience.
+This mod adds both existing AND removed recipes added by Calamity for vanilla items.
+Useful whether you're doing a vanilla+ playthrough and want some of the QOL Calamity brings, or you're playing Calamity and want some of the removed recipes back.
+Which recipes are added is fully customisable.
 
-Up to date as of Calamity version 2.0.7.1.
-(Please let me know if there are any missing recipes or other issues, or if a new Calamity update has added/changed any of these recipes.)
-
+Up to date as of Calamity v2.1.1.
 
 
 WHICH RECIPES ARE INCLUDED?
 
-(1) What kind of recipe is it?
- - New recipe for an item which has no vanilla recipe: Go to (2)
- - New recipe added alongside an existing vanilla recipe: Go to (2)
- - Change to an existing vanilla recipe: NOT INCLUDED
+Included:
+ - Both current recipes in Calamity, and recipes removed since v2.0.4
+ - Recipes using either vanilla items or the 3 Exceptions below
+ - New recipes added by Calamity for items with no vanilla recipe
+ - New recipes added alongside an existing vanilla recipe
 
-(2) Is there a Calamity-exclusive item in the recipe?
- - No: INCLUDED
- - Yes, but it is one of the Exceptions listed below: INCLUDED
- - Yes, and it is NOT one of the Exceptions: NOT INCLUDED
-
+NOT included:
+ - Recipes using Calamity-exclusive items which are not one of the 3 Exceptions
+ - Changes made to an existing vanilla recipe
 
 
 EXCEPTIONS
 
-The following 7 Calamity items, which can be obtained in Calamity from vanilla enemies, are added by this mod and are used in their respective vanilla item recipes.
+The following 3 Calamity items, which can be obtained in Calamity from vanilla enemies, are added by this mod and are used in their respective vanilla item recipes.
 
 This feature is turned off by default and must be enabled in the mod's settings.
 
  - Blood Orb
    Dropped by: Blood Zombie, Drippler, The Bride, The Groom, Maggot Zombie, Clown, Wandering Eye Fish, Zombie Merman, Blood Eel, Hemogoblin Shark, Dreadnautilus
    Can also be crafted from Bloody Tear
-   Used to craft: Vitamins, Money Trough, Bloody Tear, and all vanilla buff potions
-
- - Murky Paste
-   Dropped by: Arapaima, Spiked Jungle Slime
-   Also found in Jungle/Bramble Crates
-   Used to craft: Bezoar
+   Used to craft: Bloody Tear, Money Trough, Vitamins, and all vanilla potions
 
  - Ancient Bone Dust
    Dropped by: Skeleton, Armored Skeleton, Skeleton Archer, Spore Skeleton, Hoplite
-   Used to craft: Armor Polish
-
- - Demonic Bone Ash
-   Dropped by: Demon, Voodoo Demon, Red Devil, Bone Serpent
-   Used to craft: Demon Conch
+   Used to craft: Fledgling Wings, Armor Polish
 
  - Essence of Eleum
    Dropped by: Ice Elemental, Ice Tortoise, Icy Merman, Wolf, Ice Golem, Mister Stabby, Snow Balla, Snowman Gangsta
+   Can also be found in Boreal Crates
    Used to craft: Frozen Turtle Shell
-
- - Essence of Sunlight
-   Dropped by: Harpy (in Hardmode), Wyvern, Angry Nimbus, Golem
-   Used to craft: Core of Sunlight
-
- - Core of Sunlight
-   Crafted from Essence of Sunlight
-   Used to craft: Lihzahrd Power Cell
-
-(Let me know if there are any more crafting materials that should be added to this list. They should only be added if they are obtainable from vanilla enemies or other vanilla sources.)
