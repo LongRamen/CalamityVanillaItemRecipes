@@ -37,7 +37,7 @@ DisableAllRemovedRecipes: {
 	Tooltip: "{$Substitutions.CalamityDisableItem}"
 }
 
-AncientBoneDust_Enabled: {
+AncientBoneDust_Obtainable: {
 	Label: Enable Ancient Bone Dust
 	Tooltip: "{$Substitutions.ItemsTooltip}"
 }
@@ -63,7 +63,7 @@ ArmorPolish: {
 		'''
 }
 
-BloodOrb_Enabled: {
+BloodOrb_Obtainable: {
 	Label: Enable Blood Orbs
 	Tooltip: "{$Substitutions.ItemsTooltip}"
 }
@@ -591,7 +591,7 @@ WrathPotion: {
 		'''
 }
 
-EssenceofEleum_Enabled: {
+EssenceOfEleum_Obtainable: {
 	Label: Enable Essence of Eleum
 	Tooltip: "{$Substitutions.ItemsTooltip}"
 }

@@ -13,7 +13,7 @@ public class NewNPCDrops : GlobalNPC
         LeadingConditionRule postEoC = new(Condition.DownedEyeOfCthulhu.ToDropCondition(ShowItemDropInUI.Always));
         npcLoot.Add(postEoC);
 
-        if (MainConfig.Instance.AncientBoneDust_Enabled)
+        if (MainConfig.Instance.AncientBoneDust_Obtainable)
         {
             // Ancient Bone Dust - Skeleton, Armored Skeleton, Skeleton Archer, Spore Skeleton, Hoplite
             if (System.Array.IndexOf([NPCID.Skeleton, NPCID.ArmoredSkeleton, NPCID.SkeletonArcher, NPCID.SporeSkeleton, NPCID.GreekSkeleton], npc.type) > -1)
@@ -22,7 +22,7 @@ public class NewNPCDrops : GlobalNPC
             }
         }
 
-        if (MainConfig.Instance.BloodOrb_Enabled)
+        if (MainConfig.Instance.BloodOrb_Obtainable)
         {
             // Blood Orb - Blood Zombie, Drippler, The Bride, The Groom, Maggot Zombie, Clown, Wandering Eye Fish, Zombie Merman, Blood Eel, Hemogoblin Shark, Dreadnautilus
             if (npc.type == NPCID.BloodZombie || npc.type == NPCID.Drippler)
@@ -61,7 +61,7 @@ public class NewNPCDrops : GlobalNPC
             }
         }
 
-        if (MainConfig.Instance.EssenceofEleum_Enabled)
+        if (MainConfig.Instance.EssenceOfEleum_Obtainable)
         {
             // Essence of Eleum - Ice Elemental, Ice Tortoise, Icy Merman, Wolf, Ice Golem, Mister Stabby, Snow Balla, Snowman Gangsta
             if (System.Array.IndexOf([NPCID.IceElemental, NPCID.IceTortoise, NPCID.IcyMerman, NPCID.Wolf], npc.type) > -1)

@@ -38,12 +38,12 @@ public class MainConfig : ModConfig // 3. Calamity Items
     private void ToggleAllItemsAndRecipes(bool value)
     {
         // Ancient Bone Dust
-        AncientBoneDust_Enabled = value;
+        AncientBoneDust_Obtainable = value;
         FledglingWings = value;
         ArmorPolish = value;
 
         // Blood Orb
-        BloodOrb_Enabled = value;
+        BloodOrb_Obtainable = value;
         BloodyTear = value;
         MoneyTrough = value;
         BloodOrb_Recipe = value;
@@ -51,7 +51,7 @@ public class MainConfig : ModConfig // 3. Calamity Items
         ToggleAllPotions(value);
 
         // Essence of Eleum
-        EssenceofEleum_Enabled = value;
+        EssenceOfEleum_Obtainable = value;
         FrozenTurtleShell = value;
     }
 
@@ -118,7 +118,7 @@ public class MainConfig : ModConfig // 3. Calamity Items
 
     [DefaultValue(false)]
     [ReloadRequired]
-    public bool AncientBoneDust_Enabled { get; set; }
+    public bool AncientBoneDust_Obtainable { get; set; }
 
     // Fledgling Wings (current)
     [DefaultValue(false)]
@@ -139,7 +139,7 @@ public class MainConfig : ModConfig // 3. Calamity Items
 
     [DefaultValue(false)]
     [ReloadRequired]
-    public bool BloodOrb_Enabled { get; set; }
+    public bool BloodOrb_Obtainable { get; set; }
 
     // Bloody Tear (current)
     [DefaultValue(false)]
@@ -485,7 +485,7 @@ public class MainConfig : ModConfig // 3. Calamity Items
 
     [DefaultValue(false)]
     [ReloadRequired]
-    public bool EssenceofEleum_Enabled { get; set; }
+    public bool EssenceOfEleum_Obtainable { get; set; }
 
     // Frozen Turtle Shell (removed)
     [DefaultValue(false)]
@@ -498,7 +498,7 @@ public class MainConfig : ModConfig // 3. Calamity Items
     #region OnDeserialized
 
     [JsonExtensionData]
-    private readonly IDictionary<string, JToken> _additionalData = new Dictionary<string, JToken>();
+    private readonly Dictionary<string, JToken> _additionalData = [];
 
     [OnDeserialized]
     internal void OnDeserializedMethod(StreamingContext context)
@@ -510,6 +510,32 @@ public class MainConfig : ModConfig // 3. Calamity Items
                 bool NewItemsEnabled = token.ToObject<bool>();
 
                 ToggleAllItemsAndRecipes(NewItemsEnabled);
+            }
+            if (_additionalData.TryGetValue("AncientBoneDust_Enabled", out token))
+            {
+                bool AncientBoneDust_Enabled = token.ToObject<bool>();
+
+                AncientBoneDust_Obtainable = AncientBoneDust_Enabled;
+                FledglingWings = AncientBoneDust_Enabled;
+                ArmorPolish = AncientBoneDust_Enabled;
+            }
+            if (_additionalData.TryGetValue("BloodOrb_Enabled", out token))
+            {
+                bool BloodOrb_Enabled = token.ToObject<bool>();
+
+                BloodOrb_Obtainable = BloodOrb_Enabled;
+                BloodyTear = BloodOrb_Enabled;
+                MoneyTrough = BloodOrb_Enabled;
+                BloodOrb_Recipe = BloodOrb_Enabled;
+                Vitamins = BloodOrb_Enabled;
+                ToggleAllPotions(BloodOrb_Enabled);
+            }
+            if (_additionalData.TryGetValue("EssenceofEleum_Enabled", out token))
+            {
+                bool EssenceofEleum_Enabled = token.ToObject<bool>();
+
+                EssenceOfEleum_Obtainable = EssenceofEleum_Enabled;
+                FrozenTurtleShell = EssenceofEleum_Enabled;
             }
         }
         catch { }
