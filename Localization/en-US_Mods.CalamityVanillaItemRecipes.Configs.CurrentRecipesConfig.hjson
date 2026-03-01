@@ -239,7 +239,7 @@ WaterWalkingBoots: {
 	Label: "[i:WaterWalkingBoots] Water Walking Boots"
 	Tooltip:
 		'''
-		[i/s5:Leather] [i/s5:WaterWalkingPotion] @ [i:IronAnvil] >> [i:WaterWalkingBoots]
+		[i/s5:Leather] [i/s5:WaterWalkingPotion] @ [i:Loom] >> [i:WaterWalkingBoots]
 
 		{$Substitutions.CalamityDisableRecipe}
 		'''
