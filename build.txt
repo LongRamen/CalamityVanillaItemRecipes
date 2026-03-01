@@ -1,5 +1,5 @@
 displayName = Calamity's Vanilla Item Recipes
 author = LongRamen
-version = 1.4
+version = 1.4.1
 includeSource = true
 homepage = https://github.com/LongRamen/CalamityVanillaItemRecipes

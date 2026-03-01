@@ -215,7 +215,7 @@ public class AccessoryRecipes : ModSystem
             Recipe.Create(ItemID.WaterWalkingBoots)
                 .AddIngredient(ItemID.Leather, 5)
                 .AddIngredient(ItemID.WaterWalkingPotion, 5)
-                .AddTile(TileID.Anvils)
+                .AddTile(TileID.Loom)
                 //.DisableDecraft()
                 .Register();
 
