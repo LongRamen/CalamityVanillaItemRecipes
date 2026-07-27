@@ -14,11 +14,11 @@ public class ConsumableRecipes : ModSystem
         // Life Crystal
         if (CurrentRecipesConfig.Instance.LifeCrystal)
             Recipe.Create(ItemID.LifeCrystal)
-                .AddIngredient(ItemID.StoneBlock, 5)
+                .AddRecipeGroup(nameof(ItemID.StoneBlock), 5)
                 .AddIngredient(ItemID.Ruby, 2)
                 .AddIngredient(ItemID.HealingPotion)
                 .AddTile(TileID.Anvils)
-                .DisableDecraft()
+                //.DisableDecraft()
                 .Register();
 
         // Snow Globe

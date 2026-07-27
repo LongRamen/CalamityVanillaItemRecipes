@@ -33,8 +33,8 @@ public class AccessoryRecipes : ModSystem
         if (CurrentRecipesConfig.Instance.BlizzardInABottle)
             Recipe.Create(ItemID.BlizzardinaBottle)
                 .AddIngredient(ItemID.Bottle)
-                .AddIngredient(ItemID.Cloud, 5)
-                .AddIngredient(ItemID.SnowBlock, 5)
+                .AddIngredient(ItemID.Cloud, 15)
+                .AddIngredient(ItemID.SnowBlock, 30)
                 .AddIngredient(ItemID.Feather, 3)
                 .AddTile(TileID.Anvils)
                 //.DisableDecraft()
@@ -53,7 +53,7 @@ public class AccessoryRecipes : ModSystem
         if (CurrentRecipesConfig.Instance.CloudInABottle)
             Recipe.Create(ItemID.CloudinaBottle)
                 .AddIngredient(ItemID.Bottle)
-                .AddIngredient(ItemID.Cloud, 5)
+                .AddIngredient(ItemID.Cloud, 30)
                 .AddIngredient(ItemID.Feather, 2)
                 .AddTile(TileID.Anvils)
                 //.DisableDecraft()
@@ -182,6 +182,17 @@ public class AccessoryRecipes : ModSystem
                 .AddRecipeGroup("IronBar", 5)
                 .AddTile(TileID.Anvils)
                 //.DisableDecraft()
+                .Register();
+
+        // Sandstorm in a Bottle
+        if (CurrentRecipesConfig.Instance.SandstormInABottle)
+            Recipe.Create(ItemID.SandstorminaBottle)
+                .AddIngredient(ItemID.Bottle)
+                .AddRecipeGroup("Sand", 40)
+                .AddIngredient(ItemID.Feather, 3)
+                .AddIngredient(ItemID.Cloud, 15)
+                .AddTile(TileID.Anvils)
+                .DisableDecraft()
                 .Register();
 
         // Shadow Orb

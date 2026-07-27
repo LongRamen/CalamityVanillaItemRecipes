@@ -34,7 +34,7 @@ BlizzardInABottle: {
 	Label: "[i:BlizzardinaBottle] Blizzard in a Bottle"
 	Tooltip:
 		'''
-		[i:Bottle] [i/s5:Cloud] [i/s5:SnowBlock] [i/s3:Feather] @ [i:IronAnvil] >> [i:BlizzardinaBottle]
+		[i:Bottle] [i/s15:Cloud] [i/s30:SnowBlock] [i/s3:Feather] @ [i:IronAnvil] >> [i:BlizzardinaBottle]
 
 		{$Substitutions.CalamityDisableRecipe}
 		'''
@@ -55,7 +55,7 @@ CloudInABottle: {
 	Label: "[i:CloudinaBottle] Cloud in a Bottle"
 	Tooltip:
 		'''
-		[i:Bottle] [i/s5:Cloud] [i/s2:Feather] @ [i:IronAnvil] >> [i:CloudinaBottle]
+		[i:Bottle] [i/s30:Cloud] [i/s2:Feather] @ [i:IronAnvil] >> [i:CloudinaBottle]
 
 		{$Substitutions.CalamityDisableRecipe}
 		'''
@@ -204,6 +204,16 @@ Radar: {
 		'''
 }
 
+SandstormInABottle: {
+	Label: "[i:SandstorminaBottle] Sandstorm in a Bottle"
+	Tooltip:
+		'''
+		[i:Bottle] [i/s40:CalamityVanillaItemRecipes/AnySandBlock] [i/s3:Feather] [i/s15:Cloud] @ [i:IronAnvil] >> [i:SandstorminaBottle]
+
+		{$Substitutions.CalamityDisableRecipe}
+		'''
+}
+
 ShadowOrb: {
 	Label: "[i:ShadowOrb] Shadow Orb"
 	Tooltip:
@@ -310,7 +320,7 @@ LifeCrystal: {
 	Label: "[i:LifeCrystal] Life Crystal"
 	Tooltip:
 		'''
-		[i/s5:StoneBlock] [i/s2:Ruby] [i:HealingPotion] @ [i:IronAnvil] >> [i:LifeCrystal]
+		[i/s5:CalamityVanillaItemRecipes/AnyStoneBlock] [i/s2:Ruby] [i:HealingPotion] @ [i:IronAnvil] >> [i:LifeCrystal]
 
 		{$Substitutions.CalamityDisableRecipe}
 		'''
@@ -450,7 +460,7 @@ EncumberingStone: {
 	Label: "[i:EncumberingStone] Encumbering Stone"
 	Tooltip:
 		'''
-		[i/s100:StoneBlock] @ [i:IronAnvil] >> [i:EncumberingStone]
+		[i/s100:CalamityVanillaItemRecipes/AnyStoneBlock] @ [i:IronAnvil] >> [i:EncumberingStone]
 
 		{$Substitutions.CalamityDisableRecipe}
 		'''
@@ -674,7 +684,7 @@ WandOfSparking: {
 	Label: "[i:WandofSparking] Wand Of Sparking"
 	Tooltip:
 		'''
-		[i/s5:Wood] [i/s3:Torch] [i:FallenStar] @ [i:IronAnvil] >> [i:WandofSparking]
+		[i/s5:CalamityVanillaItemRecipes/AnyWood] [i/s3:Torch] [i:FallenStar] @ [i:IronAnvil] >> [i:WandofSparking]
 		[c/{$Substitutions.Colours.RecipeCondition}:(Not in Remix worlds)]
 
 		{$Substitutions.CalamityDisableRecipe}
@@ -695,7 +705,7 @@ WoodenBoomerang: {
 	Label: "[i:WoodenBoomerang] Wooden Boomerang"
 	Tooltip:
 		'''
-		[i/s7:Wood] @ [i:WorkBench] >> [i:WoodenBoomerang]
+		[i/s7:CalamityVanillaItemRecipes/AnyWood] @ [i:WorkBench] >> [i:WoodenBoomerang]
 
 		{$Substitutions.CalamityDisableRecipe}
 		'''

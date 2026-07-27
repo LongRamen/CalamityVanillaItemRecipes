@@ -14,7 +14,7 @@ public class ToolRecipes : ModSystem
         // Encumbering Stone
         if (CurrentRecipesConfig.Instance.EncumberingStone)
             Recipe.Create(ItemID.EncumberingStone)
-                .AddIngredient(ItemID.StoneBlock, 100)
+                .AddRecipeGroup(nameof(ItemID.StoneBlock), 100)
                 .AddTile(TileID.Anvils)
                 //.DisableDecraft()
                 .Register();

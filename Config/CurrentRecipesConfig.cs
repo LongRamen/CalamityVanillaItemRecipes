@@ -54,6 +54,7 @@ public class CurrentRecipesConfig : ModConfig // 1. Current Recipes
         ObsidianRose = value;
         PutridScent = value;
         Radar = value;
+        SandstormInABottle = value;
         ShadowOrb = value;
         ShinyRedBalloon = value;
         StepStool = value;
@@ -211,6 +212,11 @@ public class CurrentRecipesConfig : ModConfig // 1. Current Recipes
     [DefaultValue(defaultValue)]
     [ReloadRequired]
     public bool Radar { get; set; }
+
+    // Sandstorm in a Bottle
+    [DefaultValue(defaultValue)]
+    [ReloadRequired]
+    public bool SandstormInABottle { get; set; }
 
     // Shadow Orb
     [DefaultValue(defaultValue)]

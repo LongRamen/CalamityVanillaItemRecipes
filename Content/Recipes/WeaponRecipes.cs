@@ -157,7 +157,7 @@ public class WeaponRecipes : ModSystem
         // Wand of Sparking
         if (CurrentRecipesConfig.Instance.WandOfSparking)
             Recipe.Create(ItemID.WandofSparking)
-                .AddIngredient(ItemID.Wood, 5)
+                .AddRecipeGroup("Wood", 5)
                 .AddIngredient(ItemID.Torch, 3)
                 .AddIngredient(ItemID.FallenStar)
                 .AddTile(TileID.Anvils)
@@ -178,7 +178,7 @@ public class WeaponRecipes : ModSystem
         // Wooden Boomerang
         if (CurrentRecipesConfig.Instance.WoodenBoomerang)
             Recipe.Create(ItemID.WoodenBoomerang)
-                .AddIngredient(ItemID.Wood, 7)
+                .AddRecipeGroup("Wood", 7)
                 .AddTile(TileID.WorkBenches)
                 //.DisableDecraft()
                 .Register();
