@@ -1,4 +1,4 @@
-displayName = Calamity's Vanilla Item Recipes
+displayName = Calamity's Vanilla Item Recipes (CVIR)
 author = LongRamen
 version = 1.4.1
 includeSource = true
