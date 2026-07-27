@@ -58,6 +58,11 @@ AnyIronBar: {
 	Tooltip: "{$Substitutions.DummyTooltip}"
 }
 
+AnySandBlock: {
+	DisplayName: Any Sand Block
+	Tooltip: "{$Substitutions.DummyTooltip}"
+}
+
 AnyStoneBlock: {
 	DisplayName: Any Stone Block
 	Tooltip: "{$Substitutions.DummyTooltip}"
