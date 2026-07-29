@@ -188,9 +188,9 @@ public class AccessoryRecipes : ModSystem
         if (CurrentRecipesConfig.Instance.SandstormInABottle)
             Recipe.Create(ItemID.SandstorminaBottle)
                 .AddIngredient(ItemID.Bottle)
+                .AddIngredient(ItemID.Cloud, 15)
                 .AddRecipeGroup("Sand", 40)
                 .AddIngredient(ItemID.Feather, 3)
-                .AddIngredient(ItemID.Cloud, 15)
                 .AddTile(TileID.Anvils)
                 .DisableDecraft()
                 .Register();

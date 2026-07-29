@@ -208,7 +208,7 @@ SandstormInABottle: {
 	Label: "[i:SandstorminaBottle] Sandstorm in a Bottle"
 	Tooltip:
 		'''
-		[i:Bottle] [i/s40:CalamityVanillaItemRecipes/AnySandBlock] [i/s3:Feather] [i/s15:Cloud] @ [i:IronAnvil] >> [i:SandstorminaBottle]
+		[i:Bottle] [i/s15:Cloud] [i/s40:CalamityVanillaItemRecipes/AnySandBlock] [i/s3:Feather] @ [i:IronAnvil] >> [i:SandstorminaBottle]
 
 		{$Substitutions.CalamityDisableRecipe}
 		'''
