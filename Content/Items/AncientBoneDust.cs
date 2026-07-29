@@ -15,7 +15,7 @@ public class AncientBoneDust : ModItem
         Item.width = 20;
         Item.height = 20;
     }
-    
+
     public override void AddRecipes()
     {
         #region Current

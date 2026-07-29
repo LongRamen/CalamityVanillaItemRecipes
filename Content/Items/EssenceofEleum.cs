@@ -23,7 +23,7 @@ public class EssenceofEleum : ModItem
         Item.width = 28;
         Item.height = 24;
     }
-    
+
     public override void AddRecipes()
     {
         #region Removed

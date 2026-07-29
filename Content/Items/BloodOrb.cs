@@ -13,7 +13,7 @@ public class BloodOrb : ModItem
         Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(6, 4));
         ItemID.Sets.AnimatesAsSoul[Item.type] = true;
     }
-    
+
     public override void SetDefaults()
     {
         Item.value = Item.sellPrice(0, 0, 0, 40);
@@ -22,7 +22,7 @@ public class BloodOrb : ModItem
         Item.width = 16;
         Item.height = 28;
     }
-    
+
     public override void AddRecipes()
     {
         #region Current
