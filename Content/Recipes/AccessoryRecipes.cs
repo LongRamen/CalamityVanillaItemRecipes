@@ -135,7 +135,7 @@ public class AccessoryRecipes : ModSystem
             Recipe.Create(ItemID.IceSkates)
                 .AddIngredient(ItemID.FlinxFur, 3)
                 .AddRecipeGroup("IronBar", 5)
-                .AddTile(TileID.Anvils)
+                .AddTile(TileID.Loom)
                 //.DisableDecraft()
                 .Register();
 

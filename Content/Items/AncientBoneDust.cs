@@ -18,21 +18,6 @@ public class AncientBoneDust : ModItem
 
     public override void AddRecipes()
     {
-        #region Current
-
-        // Fledgling Wings
-        if (MainConfig.Instance.FledglingWings)
-            Recipe.Create(ItemID.CreativeWings)
-                .AddIngredient<AncientBoneDust>(2)
-                .AddIngredient(ItemID.Cloud, 5)
-                .AddIngredient(ItemID.Feather, 10)
-                .AddTile(TileID.Anvils)
-                //.DisableDecraft()
-                .Register();
-
-        #endregion
-
-
         #region Removed
 
         // Armor Polish
@@ -42,6 +27,16 @@ public class AncientBoneDust : ModItem
                 .AddIngredient<AncientBoneDust>(3)
                 .AddTile(TileID.Anvils)
                 .DisableDecraft()
+                .Register();
+
+        // Fledgling Wings
+        if (MainConfig.Instance.FledglingWings)
+            Recipe.Create(ItemID.CreativeWings)
+                .AddIngredient<AncientBoneDust>(2)
+                .AddIngredient(ItemID.Cloud, 5)
+                .AddIngredient(ItemID.Feather, 10)
+                .AddTile(TileID.Anvils)
+                //.DisableDecraft()
                 .Register();
 
         #endregion

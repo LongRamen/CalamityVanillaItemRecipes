@@ -42,16 +42,6 @@ AncientBoneDust_Obtainable: {
 	Tooltip: "{$Substitutions.ItemsTooltip}"
 }
 
-FledglingWings: {
-	Label: "[i:CreativeWings] Fledgling Wings [c/{$Substitutions.Colours.Current}:(current)]"
-	Tooltip:
-		'''
-		[i/s2:CalamityVanillaItemRecipes/AncientBoneDust] [i/s5:Cloud] [i/s10:Feather] @ [i:IronAnvil] >> [i:CreativeWings]
-
-		{$Substitutions.CalamityDisableItem}
-		'''
-}
-
 ArmorPolish: {
 	Label: "[i:ArmorPolish] Armor Polish [c/{$Substitutions.Colours.Removed}:(removed)]"
 	Tooltip:
@@ -59,6 +49,17 @@ ArmorPolish: {
 		[i/s10:Bone] [i/s3:CalamityVanillaItemRecipes/AncientBoneDust] @ [i:IronAnvil] >> [i:ArmorPolish]
 
 		{$Substitutions.Removed_2_1_0}
+		{$Substitutions.CalamityDisableItem}
+		'''
+}
+
+FledglingWings: {
+	Label: "[i:CreativeWings] Fledgling Wings [c/{$Substitutions.Colours.Removed}:(removed)]"
+	Tooltip:
+		'''
+		[i/s2:CalamityVanillaItemRecipes/AncientBoneDust] [i/s5:Cloud] [i/s10:Feather] @ [i:IronAnvil] >> [i:CreativeWings]
+
+		{$Substitutions.Removed_2_2_2}
 		{$Substitutions.CalamityDisableItem}
 		'''
 }

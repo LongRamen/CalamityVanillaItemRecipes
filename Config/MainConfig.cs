@@ -39,8 +39,8 @@ public class MainConfig : ModConfig // 3. Calamity Items
     {
         // Ancient Bone Dust
         AncientBoneDust_Obtainable = value;
-        FledglingWings = value;
         ArmorPolish = value;
+        FledglingWings = value;
 
         // Blood Orb
         BloodOrb_Obtainable = value;
@@ -76,7 +76,6 @@ public class MainConfig : ModConfig // 3. Calamity Items
 
     private void ToggleAllCurrentRecipes(bool value)
     {
-        FledglingWings = value;
         BloodyTear = value;
         MoneyTrough = value;
         ToggleAllPotions(value);
@@ -104,6 +103,7 @@ public class MainConfig : ModConfig // 3. Calamity Items
     private void ToggleAllRemovedRecipes(bool value)
     {
         ArmorPolish = value;
+        FledglingWings = value;
         BloodOrb_Recipe = value;
         Vitamins = value;
         FrozenTurtleShell = value;
@@ -120,15 +120,15 @@ public class MainConfig : ModConfig // 3. Calamity Items
     [ReloadRequired]
     public bool AncientBoneDust_Obtainable { get; set; }
 
-    // Fledgling Wings (current)
-    [DefaultValue(false)]
-    [ReloadRequired]
-    public bool FledglingWings { get; set; }
-
     // Armor Polish (removed)
     [DefaultValue(false)]
     [ReloadRequired]
     public bool ArmorPolish { get; set; }
+
+    // Fledgling Wings (removed)
+    [DefaultValue(false)]
+    [ReloadRequired]
+    public bool FledglingWings { get; set; }
 
     #endregion
 

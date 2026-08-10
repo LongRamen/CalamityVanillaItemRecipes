@@ -2,6 +2,7 @@ CalamityDisableItem: "[c/{$Colours.CalamityRed}:(You should probably disable the
 CalamityDisableRecipe: "[c/{$Colours.CalamityRed}:(You should probably disable all current recipes if you're playing with Calamity enabled)]"
 Removed_2_0_7: "[c/{$Colours.Removed}:(Recipe removed in Calamity v2.0.7)]"
 Removed_2_1_0: "[c/{$Colours.Removed}:(Recipe removed in Calamity v2.1.0)]"
+Removed_2_2_2: "[c/{$Colours.Removed}:(Recipe removed in Calamity v2.2.2)]"
 ItemsTooltip:
 	'''
 	Turning this off disables all methods of obtaining this item, but it does not unload the item

@@ -147,7 +147,7 @@ IceSkates: {
 	Label: "[i:IceSkates] Ice Skates"
 	Tooltip:
 		'''
-		[i/s3:FlinxFur] [i/s5:CalamityVanillaItemRecipes/AnyIronBar] @ [i:IronAnvil] >> [i:IceSkates]
+		[i/s3:FlinxFur] [i/s5:CalamityVanillaItemRecipes/AnyIronBar] @ [i:Loom] >> [i:IceSkates]
 
 		{$Substitutions.CalamityDisableRecipe}
 		'''
