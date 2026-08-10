@@ -1,5 +1,5 @@
 displayName = Calamity's Vanilla Item Recipes (CVIR)
 author = LongRamen
-version = 1.4.2
+version = 1.4.3
 includeSource = true
 homepage = https://github.com/LongRamen/CalamityVanillaItemRecipes
