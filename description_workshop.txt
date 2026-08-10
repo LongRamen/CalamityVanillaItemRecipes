@@ -4,7 +4,7 @@
 Useful whether you're doing a vanilla+ playthrough and want some of the QOL Calamity brings, or you're playing Calamity and want some of the removed recipes back.
 Which recipes are added is fully customisable.
 
-Up to date as of Calamity v2.2.1.
+Up to date as of Calamity v2.2.2.
 
 
 [h2]WHICH RECIPES ARE INCLUDED?[/h2]
