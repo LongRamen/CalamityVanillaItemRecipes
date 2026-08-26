@@ -1,4 +1,5 @@
 using CalamityVanillaItemRecipes.Config;
+using RamenLib.Items;
 using Terraria;
 using Terraria.ID;
 

@@ -3,3 +3,4 @@ author = LongRamen
 version = 1.4.3
 includeSource = true
 homepage = https://github.com/LongRamen/CalamityVanillaItemRecipes
+modReferences = RamenLib@1.0

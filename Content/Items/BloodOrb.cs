@@ -1,4 +1,5 @@
 using CalamityVanillaItemRecipes.Config;
+using RamenLib.Items;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -6,13 +7,10 @@ using Terraria.ModLoader;
 
 namespace CalamityVanillaItemRecipes.Content.Items;
 
-public class BloodOrb : ModItem
+public class BloodOrb : AnimatedItem
 {
-    public override void SetStaticDefaults()
-    {
-        Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(6, 4));
-        ItemID.Sets.AnimatesAsSoul[Item.type] = true;
-    }
+    protected override int TicksPerFrame => 6;
+    protected override int FrameCount => 4;
 
     public override void SetDefaults()
     {

@@ -1,9 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-	<Import Project="..\tModLoader.targets" />
-
-	<PropertyGroup>
-	  <Platforms>AnyCPU;x64</Platforms>
-	</PropertyGroup>
-
+	<Import Project="..\tModLoader.targets"/>
+    <ItemGroup>
+        <Reference Include="RamenLib">
+            <HintPath>..\ModAssemblies\RamenLib_v1.0.dll</HintPath>
+        </Reference>
+    </ItemGroup>
 </Project>
