@@ -10,7 +10,7 @@ public class DemonicBoneAsh : ModItem // DEPRECATED
     {
         Item.value = Item.sellPrice(0, 0, 6, 0);
         Item.rare = ItemRarityID.Orange;
-        Item.maxStack = 9999;
+        Item.maxStack = Item.CommonMaxStack;
         Item.width = 40;
         Item.height = 30;
     }

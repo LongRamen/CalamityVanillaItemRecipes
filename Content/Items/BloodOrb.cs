@@ -18,7 +18,7 @@ public class BloodOrb : ModItem
     {
         Item.value = Item.sellPrice(0, 0, 0, 40);
         Item.rare = ItemRarityID.Green;
-        Item.maxStack = 9999;
+        Item.maxStack = Item.CommonMaxStack;
         Item.width = 16;
         Item.height = 28;
     }

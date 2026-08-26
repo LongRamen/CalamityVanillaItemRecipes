@@ -10,7 +10,7 @@ public class MurkyPaste : ModItem // DEPRECATED
     {
         Item.value = Item.sellPrice(0, 0, 2, 0);
         Item.rare = ItemRarityID.Blue;
-        Item.maxStack = 9999;
+        Item.maxStack = Item.CommonMaxStack;
         Item.width = 20;
         Item.height = 28;
     }

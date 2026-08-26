@@ -14,7 +14,7 @@ public class CoreofSunlight : GlowmaskItem // DEPRECATED
     {
         Item.value = Item.sellPrice(0, 0, 40, 0);
         Item.rare = ItemRarityID.Yellow;
-        Item.maxStack = 9999;
+        Item.maxStack = Item.CommonMaxStack;
         Item.width = 26;
         Item.height = 26;
     }

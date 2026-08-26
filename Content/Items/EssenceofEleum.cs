@@ -15,7 +15,7 @@ public class EssenceofEleum : GlowmaskItem
     {
         Item.value = Item.sellPrice(0, 0, 4, 0);
         Item.rare = ItemRarityID.LightRed;
-        Item.maxStack = 9999;
+        Item.maxStack = Item.CommonMaxStack;
         Item.width = 28;
         Item.height = 24;
     }

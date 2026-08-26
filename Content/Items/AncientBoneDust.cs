@@ -11,7 +11,7 @@ public class AncientBoneDust : ModItem
     {
         Item.value = Item.sellPrice(0, 0, 0, 10);
         Item.rare = ItemRarityID.Blue;
-        Item.maxStack = 9999;
+        Item.maxStack = Item.CommonMaxStack;
         Item.width = 20;
         Item.height = 20;
     }
