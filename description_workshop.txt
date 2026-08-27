@@ -43,6 +43,8 @@ This feature is turned off by default and must be enabled in the mod's settings.
 [/list]
 
 
-(Let me know of any bugs, suggestions or corrections in the comments)
-
 Github: https://github.com/LongRamen/CalamityVanillaItemRecipes
+
+(If you want to contribute localisation, create a pull request on the above repo or leave a comment on this workshop item.)
+
+(Also let me know of any bugs, suggestions or corrections in the comments.)
